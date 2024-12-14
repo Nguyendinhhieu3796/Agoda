@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.banner{
+    margin: -10px 20px;
+    max-width: 100dvw;
+}
+/*----Banner----*/
+.banner{
+    background-color: #FFFFFF;
+}
+.banner >ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner >ul >li, a{
+    color: black;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+}
+.flag{
+    width: 25px;
+    height: 20px;
+}
+.banner >ul >li >a:hover{
+    color: blue;
+    cursor: pointer;
+}
+.banner >ul >li >a:hover {
+    color: blue;
+}
+.banner ul li button{
+    padding: 12px 6px;
+}
+.register {
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    width: 100px;
+    font-size: 15px;
+    color: #68A0FA;
+    cursor: pointer;
+}
+.register:hover{
+    background-color: #80aef9;
+    color: #FFFFFF;
+}
+.account{
+    background-color:#FFFFFF ;
+    border-radius: 5px;
+    width: 130px;
+    font-size: 15px;
+    color: #68A0FA;
+    border: 1px solid #68A0FA;
+    cursor: pointer;
+}
+.account a{
+    color: #68A0FA;
+}
+.account a:hover{
+    color: #FFFFFF;
+}
+.account:hover{
+    background-color: #80aef9;
+    color:#FFFFFF;
+}
+.bars{
+    color: #444448;
+    border: none;
+    background-color: #FFFFFF;
+    width: 42px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bars:hover{
+    background-color: #80aef9;
+    color:#FFFFFF;
+}
+/*------icon_float----*/
+.hover{
+    position: relative;
+}
+.hover::before{
+    position: absolute;
+    content: "Mới!";
+    display: block;
+    height: 18px;
+    width: 35px;
+    background-color: #E12D2D;
+    border-radius: 2.5px;
+    right: 119px;
+    bottom: 18px;
+    font-size: 13px;
+    color: #E4ECFC;
+    text-align: center;
+}
+.hover::after{
+    position: absolute;
+    content: "";
+    background-color: #E12D2D;
+    height: 10px;
+    width: 4px;
+    display: block;
+    right: 150px;
+    top: -10.01px;
+    z-index: 2;
+    transform:skewY(55deg);
+}
+.banner >ul >li:nth-child(5){
+    position: relative;
+}
+.banner >ul >li:nth-child(5)::before{
+    position: absolute;
+    content: "Mới!";
+    display: block;
+    height: 18px;
+    width: 35px;
+    background-color: #E12D2D;
+    border-radius: 2.5px;
+    right: 28px;
+    bottom: 18px;
+    font-size: 13px;
+    color: #E4ECFC;
+    text-align: center;
+}
+.banner >ul >li:nth-child(5)::after{
+    position: absolute;
+    content: "";
+    background-color: #E12D2D;
+    height: 10px;
+    width: 4px;
+    display: block;
+    right: 58px;
+    top: -10.01px;
+    z-index: 2;
+    transform:skewY(55deg);
+}
+.banner >ul >li:nth-child(6){
+    position: relative;
+}
+.banner >ul >li:nth-child(6)::before{
+    position: absolute;
+    content: "Mới!";
+    display: block;
+    height: 18px;
+    width: 35px;
+    background-color: #E12D2D;
+    border-radius: 2.5px;
+    right: 108px;
+    bottom: 18px;
+    font-size: 13px;
+    color: #E4ECFC;
+    text-align: center;
+}
+.banner >ul >li:nth-child(6)::after{
+    position: absolute;
+    content: "";
+    background-color: #E12D2D;
+    height: 10px;
+    width: 4px;
+    display: block;
+    right: 138px;
+    top: -10.01px;
+    z-index: 2;
+    transform:skewY(55deg);
+}
+.banner >ul >li:nth-child(7){
+    position: relative;
+}
+.banner >ul >li:nth-child(7)::before{
+    position: absolute;
+    content: "Mới!";
+    display: block;
+    height: 18px;
+    width: 35px;
+    background-color: #E12D2D;
+    border-radius: 2.5px;
+    right: 0px;
+    bottom: 18px;
+    font-size: 13px;
+    color: #E4ECFC;
+    text-align: center;
+}
+.banner >ul >li:nth-child(7)::after{
+    position: absolute;
+    content: "";
+    background-color: #E12D2D;
+    height: 10px;
+    width: 4px;
+    display: block;
+    right: 31px;
+    top: -10.01px;
+    z-index: 2;
+    transform:skewY(55deg);
+}
+/*-----dropdown-list--------*/
+/*.hover:hover{
+    color: #3177E9;
+    cursor: pointer;
+    
+}
+.dropdown_list{
+    position: absolute;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem -0.1rem;
+    background: #ddd;
+    color: black;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    display: none;
+}
+.hover_dropdown:hover .dropdown_list{
+    display: block;
+}*/
+/* ----------Login----------- */
+.bgr{
+    background-color: #f9f9f9;
+}
+.login{
+    width: 940px;
+    padding: 0;
+    margin: auto;
+    clear: both;
+}
+.login_form_shape{
+    width: 500px;
+    line-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.login-shape{
+    background-color: #FFFFFF;
+    box-shadow: 3px 8px 10px #E5E5E5;
+    opacity: 1;
+    transition: opacity 500ms;
+    padding: 16px 24px 24px;
+    position: relative;
+    height: auto;
+}
+.login-pannel-title{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.title_login{
+    font-weight: 500; 
+    font-size: 24px;
+    font-family: kite-mallory, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 30px;
+    margin: 8px 0px;
+    }
+.h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.login-pannel-title1{
+    margin-top: 8px;
+}
+.title_login1{
+    font-family: kite-mallory, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 8px 0px;
+}
+.h5{
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.sign{
+    list-style: none;
+}
+.box-login-input{
+    padding: 8px;
+}
+.Text{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.User-box{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.user{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+.Email-box{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.email{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+.Password-box{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.password{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+.Pass{
+    margin: 0px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgb(42, 42, 46);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(206, 208, 212);
+    background-clip: padding-box;
+    box-sizing: border-box;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* .login input{
+    margin:20px;
+    width: 436px;
+    height: 36px;
+    border-radius: 6px;
+    border: 2px solid #E9EBEE;
+    }
+.login input:hover{
+    background-color:#F2F6FD;
+    border: 1px solid #5689EB;
+}*/
+.Dn1{
+    text-align: center;
+    justify-items: center;
+    padding: 20px;
+    list-style: none;
+}
+.Dn1-1{
+    padding: 10px;
+    margin: 8px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid #94B4F0;
+    background: #5392F9;
+    box-shadow: 3px 5px 10px #DEDEDE;
+    cursor: pointer;
+}
+.Dnbtn{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    border: none;
+    background-color: #5392F9;
+    color: #FFFFFF;
+}
+.link_footer{
+    margin-top: 10px;
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    display: flex;
+}
+.Sgnup-Pas{
+    background-color: transparent;
+    text-decoration:none;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgb(83, 146, 249);
+}
+.N_account_pass {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+.Line{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+    padding: 0px;
+}
+.KngangL{
+    min-width: 1px;
+    width: 100%;
+    flex: 1 1 0%;
+    margin: 0px;
+    border-bottom: 2px solid rgb(221, 223, 226);
+}
+.Nd{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.Nd1-1{
+    font-family: kite-mallory, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.KngangR{
+    min-width: 1px;
+    width: 100%;
+    flex: 1 1 0%;
+    margin: 0px;
+    border-bottom: 2px solid rgb(221, 223, 226);
+}
+.Dn2{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 6px;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+.BtnDn1{
+    box-sizing: border-box;
+    margin: 8px;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 130%;
+}
+.GG{
+    position: relative;
+    padding: 12px;
+    border-radius: 4px;
+    user-select: none;
+    border: 1px solid rgb(83, 146, 249);
+    color: rgb(83, 146, 249);
+    background-color: rgb(255, 255, 255);
+    transition: 0.15s ease-in-out;
+    width: 26.5rem;
+    transition: 0.2s ease-in-out;
+}
+.DesGGBtn{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.PicGG-icon{
+    margin-right: 8px;
+    display: flex;
+}
+.NdGG{
+    font-family: kite-mallory, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.FB{
+    position: relative;
+    padding: 12px;
+    border-radius: 4px;
+    user-select: none;
+    border: 1px solid rgb(83, 146, 249);
+    color: rgb(83, 146, 249);
+    background-color: rgb(255, 255, 255);
+    transition: 0.15s ease-in-out;
+    width: 26.5rem;
+    transition: 0.2s ease-in-out;
+}
+.DesFBBtn{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.PicFB-icon{
+    margin-right: 8px;
+    display: flex;
+}
+.NdFB{
+    font-family: kite-mallory, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.Dkhoan{
+    font-family: kite-mallory, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: rgb(42, 42, 46);
+    text-align: center;
+}
+.Link-Dk{
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #5162f7;
+}
+.des-text{
+    font-family: kite-mallory, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+}
+/* --footer-- */
+
+footer{
+    background-color: #E9EBEE;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+.footer{
+    width: 20%;
+}
+h5{
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 5px;
+}
+.row ul{
+    text-align: left;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: left;
+    list-style-type: none;
+    padding: 4px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform:translate( -2px, 5px);
+    top:50%;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition-duration: .1s;
+}
+.list li:hover::before{
+    width: 65px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+.row{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis:25%;
+    padding: 10px;
+}
+/* ---footer_partner--- */
+.Partner{
+    background-color: #2A2A2E;
+}
+.Partner p{
+    text-align: center;
+    justify-content: center;
+    color: #92B2C1;
+}
+.logo-partner{
+    margin: 35px auto 50px;
+    align-items: center;
+    justify-items: center;
+}
+.add-logo{
+    width: 1132px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    display: flex;
+}
+.logo1{
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(https://cdn6.agoda.net/images/sprite/bg-sprite-partner_v3.png);
+    width: 144px;
+    height: 48px;
+    background-position: 0px -90px;
+}
+.logo2{
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(https://cdn6.agoda.net/images/sprite/bg-sprite-partner_v3.png);
+    width: 144px;
+    height: 48px;
+    background-position: -144px -148px;
+}
+.logo3{
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(https://cdn6.agoda.net/images/sprite/bg-sprite-partner_v3.png);
+    width: 144px;
+    height: 48px;
+    background-position: 0px -148px;
+}
+.logo4{
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(https://cdn6.agoda.net/images/sprite/bg-sprite-partner_v3.png);
+    width: 144px;
+    height: 48px;
+    background-position: -288px -148px;
+}
+.logo5{
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(https://cdn6.agoda.net/images/sprite/bg-sprite-partner_v3.png);
+    width: 144px;
+    height: 48px;
+    background-position: -144px -90px;
+}
+.logo6{
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(https://cdn6.agoda.net/images/sprite/bg-sprite-partner_v3.png);
+    width: 144px;
+    height: 48px;
+    background-position: -288px -90px;
+}
+.Copyrights{
+    text-align: center;
+    color: #C0C0C4;
+}

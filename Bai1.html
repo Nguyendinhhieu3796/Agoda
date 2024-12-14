@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e89e3396e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Booking.js">
+    <title>Booking_agoda</title>
+</head>
+<body>
+    <div class="banner">
+        <ul>
+            <li><img src="https://cdn6.agoda.net/images/kite-js/logo/agoda/color-default.svg" class="logo"></li>
+            <li><a href="">Máy bay+ K.sạn</a></li>
+            <li><a href="">Chỗ ở</a></li>
+            <div class="hover_dropdown">
+            <li class="hover">Phương tiện duy chuyển<i class="fa-solid fa-chevron-down"></i></li>
+                <div class="dropdown_list">
+                        <li>Chuyến bay</li>
+                        <li>Xe buýt</li>
+                        <li>Tàu hỏa</li>
+                        <li>Phà</li>
+                        <li>Taxi sân bay</li>
+                        <li>Thuê xe</li>
+                </div>
+            </div>         
+            <li><a href="">Hoạt động</a></li>
+            <li><a href="">Phiếu giảm giá và ưu đãi</a></li>
+            <li><a href="">eSIM</a></li>
+            <li><a href="">Cẩm nang Du Lịch</a></li>
+            <li><a href="">Hành trình du lịch</a></li>
+            <li><a href=""><img src="https://cdn6.agoda.net/images/mobile/flag-vn@2x.png" class="flag"></a></li>
+            <li>₫</li>
+            <li><button class="register"><a href="Login.html">Đăng nhập</a></button></li>
+            <li><button class="account"><a href="SignUp.html">Tạo tài khoản</a></button></li>
+            <li><button class="cart-shopping"><i class="fa-solid fa-cart-shopping"></i></button></li>
+            <li><button class="bars"><i class="fa-solid fa-bars"></i></button></li>
+        </ul>
+    </div>
+
+<div id="home-react-root">
+    <main class="HomeReactContainer" id="HomeReactContainer">
+        <section class="TileContainer TileContainer--greenBluePastel TileContainer--full TileContainer--backdrop">
+            <div class="TileContainer__Background">
+
+            </div>
+            <section class="TileContainer__column">
+                <div class="TileContainer__wrapper">
+                    <div class="WelcomeMessage WelcomeMessage--placeholder">
+                        <h1>&nbsp;</h1>
+                        <h2>&nbsp;</h2>
+                    </div>
+                    <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-w-full ab069-items-center ab069-flex ab069-flex-col ab069-justify-center ab069-relative">
+                        <div id="Tabs-Container" class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-relative" style="z-index: 998;">
+                            <ul class="Box-sc-kv6pi1-0 MxzFS">
+                                <li id="tab-all-rooms-tab" class="Box-sc-kv6pi1-0 yueiq LinkComponent__Container custom-cursor-on-hover">
+                                    <div class="Box-sc-kv6pi1-0 iPYCUf LinkComponent__Label">
+                                        <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-items-center ab069-flex">
+                                            <svg role="img" opacity="1" class="sc-eCssSg sc-jSgupP CMlWY cqeTYn">
+                                                <use href="#d107c904"></use>
+                                            </svg>
+                                            <h6 class="Typographystyled__TypographyStyled-sc-j18mtu-0 lcQfEu kite-js-Typography">Khách sạn</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li id="tab-home" class="Box-sc-kv6pi1-0 yueiq LinkComponent__Container">
+                                    <div class="Box-sc-kv6pi1-0 iPYCUf LinkComponent__Label">
+                                        <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-items-center ab069-flex">
+                                            <svg opacity="1" class="sc-eCssSg sc-jSgupP CMlWY cqeTYn">
+                                                <use href="#6aa78475"></use>
+                                            </svg>
+                                            <h6 class="Typographystyled__TypographyStyled-sc-j18mtu-0 lcQfEu kite-js-Typography">Homes &amp; Apts</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li id="tab-packages-tab" class="Box-sc-kv6pi1-0 yueiq LinkComponent__Container">
+                                    <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-w-full ab069-inline-block ab069-absolute ab069-text-center" style="top: -9px; left: 0px;">
+                                        <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 kksGcu kite-js-Typography Box-sc-kv6pi1-0 jFVgra">Đặt Gói Tiết Kiệm</p>
+                                    </div>
+                                    <div class="Box-sc-kv6pi1-0 iPYCUf LinkComponent__Label">
+                                        <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-items-center ab069-flex">
+                                            <svg opacity="1" class="sc-eCssSg sc-jSgupP CMlWY cqeTYn">
+                                                <use href="#39cd88b4"></use>
+                                            </svg>
+                                            <h6 class="Typographystyled__TypographyStyled-sc-j18mtu-0 lcQfEu kite-js-Typography ">Máy bay + K.sạn</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li id="tab-flight-tab" class="Box-sc-kv6pi1-0 yueiq LinkComponent__Container">
+                                    <div class="Box-sc-kv6pi1-0 gXKIsq LinkComponent__Label">
+                                        <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-items-center ab069-flex">
+                                            <svg opacity="1" class="sc-eCssSg sc-jSgupP CMlWY bUSKYw">
+                                                <use href="#c00333f2"></use>
+                                            </svg>
+                                            <h6 class="Typographystyled__TypographyStyled-sc-j18mtu-0 lcQfEu kite-js-Typography ">Vé máy bay</h6>\
+                                        </div>
+                                        <div class="Box-sc-kv6pi1-0 lhFcYa LinkComponent__Underline"></div>
+                                    </div>
+                                </li>
+                                <li id="tab-activities-tab" class="Box-sc-kv6pi1-0 yueiq LinkComponent__Container">
+                                    <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-w-full ab069-inline-block ab069-absolute ab069-text-center" style="top: -9px; left: 0px;">
+                                        <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 kksGcu kite-js-Typography Box-sc-kv6pi1-0 jFVgra">Mới!</p>
+                                    </div>
+                                    <div class="Box-sc-kv6pi1-0 iPYCUf LinkComponent__Label">
+                                        <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-items-center ab069-flex">
+                                            <svg opacity="1" class="sc-eCssSg sc-jSgupP CMlWY cqeTYn">
+                                                <use href="#06b033a0"></use>
+                                            </svg>
+                                            <h6 class="Typographystyled__TypographyStyled-sc-j18mtu-0 lcQfEu kite-js-Typography">Hoạt động</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li id="tab-journey-tab" class="Box-sc-kv6pi1-0 yueiq LinkComponent__Container">
+                                    <div class="Box-sc-kv6pi1-0 iPYCUf LinkComponent__Label">
+                                        <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-items-center ab069-flex">
+                                            <svg opacity="1" class="sc-eCssSg sc-jSgupP CMlWY cqeTYn">
+                                                <use href="#3073527e"></use>
+                                            </svg>
+                                            <h6 class="Typographystyled__TypographyStyled-sc-j18mtu-0 lcQfEu kite-js-Typography ">Đưa đón sân bay</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tabpanel-flight-tab" class="Box-sc-kv6pi1-0 fhbazl">
+                            <div class="Box-sc-kv6pi1-0 cVUuHz TabContent OpaqueBackground">
+                                <div class="">
+                                    <div class="FlightSearchContainer FlightSearchContainer--vertical">
+                                        <div class="FlightSearchContainer__Wrapper">
+                                            <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-flex ab069-justify-between">
+                                                <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-flex-1">
+                                                    <div class="FlightSearchContainer__JourneyType">
+                                                        <div class="ChipSetContainer Journey">
+                                                            <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-relative ab069-m-s">
+                                                                <button label="Một chiều" type="button" class="ab069-box ab069-bg-product-primary-subtle ab069-border-product-primary-strong ab069-fill-product-primary ab069-text-product-primary ab069-items-center ab069-border-solid ab069-cursor-pointer ab069-flex ab069-flex-row ab069-justify-center ab069-whitespace-nowrap ab069-px-l ab069-py-xs  ab069-rounded-base ab069-border-m  ab069-interactive" style="min-height: 36px; --interactive-color: 32, 103, 218; --interactive-color-primary: var(--ads-colors-product-primary); --color-neutral-4: var(--ads-colors-base-inverted);">
+                                                                    <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-items-center ab069-flex">
+                                                                        <span class="sc-jrAGrp sc-kEjbxe eDlaBj knmdKI">Một chiều</span>
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                            <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-relative ab069-m-s">
+                                                                <button label="Khứ hồi" type="button" class="ab069-box ab069-bg-base-surface ab069-border-base-default ab069-fill-deprecated-secondary-interactive ab069-text-deprecated-secondary-interactive ab069-items-center ab069-border-solid ab069-cursor-pointer ab069-flex ab069-flex-row ab069-justify-center ab069-whitespace-nowrap ab069-px-l ab069-py-xs  ab069-rounded-base ab069-border-s  ab069-interactive  " style="min-height: 36px; --interactive-color: 32, 103, 218; --interactive-color-primary: var(--ads-colors-product-primary); --color-neutral-4: var(--ads-colors-base-inverted);">
+                                                                    <div class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-items-center ab069-flex">
+                                                                        <span class="sc-jrAGrp sc-kEjbxe eDlaBj jREflw">Khứ hồi</span>
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="FlightSearchContainer__Row">
+                                                <div class="AutocompleteSearch NewDesign">
+                                                    <div class="Box-sc-kv6pi1-0 sc-fbNXWD gGiMIZ kmdUhJ IconBox AutocompleteSearch__IconBox custom-cursor-on-hover" id="flight-origin-text-search">
+                                                        <div class="Box-sc-kv6pi1-0 hRUYUu IconBox__wrapper custom-cursor-on-hover">
+                                                            <span>
+                                                                <i class="ficon IconBox__icon ficon-20 ficon-flights-airplane FlightSearchContainer__OriginIcon"></i>
+                                                            </span>
+                                                            <div class="IconBox__child">
+                                                                <input type="text" class="SearchBoxTextEditor AutocompleteSearch__TextEditor custom-cursor-on-hover" placeholder="Bay từ" id="flight-origin-search-input" value="">
+                                                                <span id="instruction-text" class="sc-crrsfI iDhzRL"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="AutocompleteSearch__PopupContainer" id="autocompleteSearch-origin"></div>
+                                                </div>
+                                                <div class="sc-dacFzL fIUiIW">
+                                                    <button class="Buttonstyled__ButtonStyled-sc-5gjk6l-0 fgoaWM sc-jUEnpm fmxDzY" color="primary">
+                                                        <div class="BaseButtonstyled__HiddenToggler-sc-12j2fzo-2 fMuMFt">
+                                                            <div class="Box-sc-kv6pi1-0 hRUYUu">
+                                                                <div class="sc-jQbIHB gzYVMl">
+                                                                    <svg width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="SvgIconstyled__SvgIconStyled-sc-1i6f60b-0 kvpvkK">
+                                                                        <path d="M7.854 12.146a.5.5 0 0 1 .057.638l-.057.07L3.706 17H20.5a.5.5 0 1 1 0 1H3.706l4.148 4.146a.5.5 0 0 1 .057.638l-.057.07a.5.5 0 0 1-.638.057l-.07-.057-5-5a.5.5 0 0 1-.057-.638l.057-.07 5-5a.5.5 0 0 1 .708 0zm8.292-11a.5.5 0 0 1 .638-.057l.07.057 5 5 .057.07a.5.5 0 0 1 0 .568l-.057.07-5 5-.07.057a.5.5 0 0 1-.568 0l-.07-.057-.057-.07a.5.5 0 0 1 0-.568l.057-.07L20.293 7H3.5a.5.5 0 0 1 0-1h16.793l-4.147-4.146-.057-.07a.5.5 0 0 1 .057-.638z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div class="AutocompleteSearch NewDesign">
+                                                    <div class="Box-sc-kv6pi1-0 sc-fbNXWD gGiMIZ kmdUhJ IconBox AutocompleteSearch__IconBox" id="flight-destination-text-search">
+                                                        <div class="Box-sc-kv6pi1-0 hRUYUu IconBox__wrapper">
+                                                            <span>
+                                                                <i class="ficon IconBox__icon ficon-20 ficon-flights-pin FlightSearchContainer__DestinationIcon"></i>
+                                                            </span>
+                                                            <div class="IconBox__child" data-selenium="icon-box-child">
+                                                                <input type="text" class="SearchBoxTextEditor AutocompleteSearch__TextEditor" placeholder="Bay đến" id="flight-destination-search-input" value="">
+                                                                <span id="instruction-text" class="sc-crrsfI iDhzRL"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="AutocompleteSearch__PopupContainer" id="autocompleteSearch-destination"></div>
+                                                </div>
+                                            </div>
+                                            <div class="FlightSearchContainer__Row">
+                                                <div class="FlightSearchContainer__DateSelection">
+                                                    <div class="DateSelector FlightDateSelector" aria-label="Ngày đi">
+                                                        <div class="Box-sc-kv6pi1-0 sc-fbNXWD gGiMIZ kmdUhJ IconBox IconBox--startDate IconBox--checkIn IconBox--single-date DateSelector__IconBox custom-cursor-on-hover" aria-label="Ngày đi Bộ chọn ngày được mở khi tiêu điểm nằm trên hộp nhập khởi hành/trở về" id="flight-departure">
+                                                            <div class="Box-sc-kv6pi1-0 hRUYUu IconBox__wrapper">
+                                                                <span>
+                                                                    <i class="ficon IconBox__icon ficon-20 ficon-check-in"></i>
+                                                                </span>
+                                                                <div class="IconBox__child" data-selenium="icon-box-child">
+                                                                    <div class="SearchBoxTextDescription SearchBoxTextDescription--NewDesign DateSelector__Description">
+                                                                        <div class="SearchBoxTextDescription__title custom-cursor-on-hover">Ngày đi</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="DateSelector__PopupContainer" id="dateSelector-departure" aria-label="Ngày đi"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="FlightSearchOccupancy">
+                                                    <div class="Box-sc-kv6pi1-0 sc-fbNXWD gGiMIZ kmdUhJ IconBox FlightSearchOccupancy__IconBox" id="flight-occupancy">
+                                                        <div class="Box-sc-kv6pi1-0 hRUYUu IconBox__wrapper">
+                                                            <span>
+                                                                <i class="ficon IconBox__icon ficon-20 ficon-travelers"></i>
+                                                            </span>
+                                                            <div class="IconBox__child">
+                                                                <div class="SearchBoxTextDescription SearchBoxTextDescription--NewDesign FlightSearchOccupancy__Description">
+                                                                    <div class="SearchBoxTextDescription__title">1 Hành khách, Phổ thông</div>
+                                                                    <div class="SearchBoxTextDescription__child">
+                                                                        <i class="ficon ficon-12 ficon-thin-arrow-down FlightSearchOccupancy__ArrowDown"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Box-sc-kv6pi1-0 bKKJho CheckBoxWithBadge__Container CheckBoxWithBadge__Container--tab">
+                                        <div class="Box-sc-kv6pi1-0 fEqKQn">
+                                            <label class="Labelstyled__LabelStyled-sc-cj4uls-0 iJAAYi Checkboxstyled__CheckboxLabel-sc-vp5jkq-1 chBApN custom-cursor-on-hover">
+                                                <input type="checkbox" class="Checkboxstyled__CheckboxInput-sc-vp5jkq-0 kOKrHS">
+                                                <span class="Spanstyled__SpanStyled-sc-16tp9kb-0 gwICfd kite-js-Span Checkboxstyled__CheckboxSpan-sc-vp5jkq-2 bMXWRU custom-cursor-on-hover">
+                                                    <span class="Spanstyled__SpanStyled-sc-16tp9kb-0 gBHCUV kite-js-Span Box-sc-kv6pi1-0 hcWQuh">Thêm khách sạn để tiết kiệm tới 25%</span>
+                                                </span>
+                                            </label>
+                                            <span class="Spanstyled__SpanStyled-sc-16tp9kb-0 gwICfd kite-js-Span Box-sc-kv6pi1-0 ixchGS">Đặt gói để Tiết kiệm</span>
+                                        </div>
+                                        <div class="Box-sc-kv6pi1-0 QfIMZ"></div>
+                                    </div>
+                                    <noscript></noscript>
+                                </div>
+                            </div>
+                            <div class="Box-sc-kv6pi1-0 hRUYUu TabContent__Search--button">
+                                <div id="Tabs-Container" class="ab069-box ab069-fill-inherit ab069-text-inherit ab069-relative" style="z-index: 997;">
+                                    <button radius="M" class="Buttonstyled__ButtonStyled-sc-5gjk6l-0 iCZpGI Box-sc-kv6pi1-0 fDMIuA" color="primary">
+                                        <div class="BaseButtonstyled__HiddenToggler-sc-12j2fzo-2 fMuMFt">
+                                            <div class="Box-sc-kv6pi1-0 hRUYUu">
+                                                <span class="Spanstyled__SpanStyled-sc-16tp9kb-0 bXsPY kite-js-Span ">TÌM CHUYẾN BAY</span>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="HomeBody">
+
+    <section class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-mb-xl4 ae7b2-mt-xl4">
+        <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-items-center ae7b2-flex ae7b2-justify-start ae7b2-relative ae7b2-mb-xl">
+            <h2 class="sc-jrAGrp sc-kEjbxe eDlaBj hZQUvX">Các điểm đến thu hút nhất Việt Nam</h2>
+        </div>
+        <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+         <div aria-label="Quảng cáo dạng quay vòng Các điểm đến thu hút nhất Việt Nam" class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-overflow-x-hidden ae7b2-relative ae7b2-mt-xl">
+          <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-relative">
+           <div class="ae7b2-box sc-hHftDr cMViey ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-overflow-x-auto ae7b2-overflow-y-hidden">
+             <section class="ae7b2-box sc-dmlrTW guKkvw ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-justify-center ae7b2-snap-start ae7b2-snap-always ae7b2-mx-s ae7b2-pb-l" aria-hidden="true" inert="">
+               <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit" aria-label="Trang 1/13">
+                 <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                   <a href="/vi-vn/city/ho-chi-minh-city-vn.html">
+                     <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                      <img loading="lazy" width="200px" data-element-name="top-destination-city-image" alt="Hồ Chí Minh" srcset="//pix6.agoda.net/geo/city/13170/1_13170_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/13170/1_13170_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/13170/1_13170_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/13170/1_13170_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/13170/1_13170_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/13170/1_13170_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/13170/1_13170_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                      <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Hồ Chí Minh</h3>
+                      <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">15,546 chỗ ở </span>
+                     </div>
+                   </a>
+                 </div>
+                </div>
+              </section>
+              <section class="ae7b2-box sc-dmlrTW guKkvw ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-justify-center ae7b2-snap-start ae7b2-snap-always ae7b2-mx-s ae7b2-pb-l scroll-snap-none">
+               <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit" aria-label="Trang 2/13">
+                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                 <a href="/vi-vn/city/hanoi-vn.html">
+                  <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                   <img loading="lazy" width="200px" data-element-name="top-destination-city-image" alt="Hà Nội" srcset="//pix6.agoda.net/geo/city/2758/065f4f2c9fa263611ab65239ecbeaff7.jpg?ce=0&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/2758/065f4f2c9fa263611ab65239ecbeaff7.jpg?ce=0&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/2758/065f4f2c9fa263611ab65239ecbeaff7.jpg?ce=0&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/2758/065f4f2c9fa263611ab65239ecbeaff7.jpg?ce=0&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/2758/065f4f2c9fa263611ab65239ecbeaff7.jpg?ce=0&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/2758/065f4f2c9fa263611ab65239ecbeaff7.jpg?ce=0&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/2758/065f4f2c9fa263611ab65239ecbeaff7.jpg?ce=0&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                   <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Hà Nội</h3>
+                   <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">10,744 chỗ ở </span>
+                  </div>
+                 </a>
+                </div>
+               </div>
+              </section>
+              <section class="ae7b2-box sc-dmlrTW guKkvw ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-justify-center ae7b2-snap-start ae7b2-snap-always ae7b2-mx-s ae7b2-pb-l scroll-snap-none">
+               <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit"  aria-label="Trang 3/13">
+                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                 <a href="/vi-vn/city/vung-tau-vn.html">
+                  <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                   <img loading="lazy" width="200px" data-element-name="top-destination-city-image" alt="Vũng Tàu" srcset="//pix6.agoda.net/geo/city/17190/1_17190_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/17190/1_17190_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/17190/1_17190_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/17190/1_17190_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/17190/1_17190_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/17190/1_17190_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/17190/1_17190_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                   <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Vũng Tàu</h3>
+                   <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">6,329 chỗ ở </span>
+                  </div>
+                 </a>
+                </div>
+               </div>
+              </section>
+              <section class="ae7b2-box sc-dmlrTW guKkvw ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-justify-center ae7b2-snap-start ae7b2-snap-always ae7b2-mx-s ae7b2-pb-l">
+               <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit" aria-label="Trang 4/13">
+                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                 <a href="/vi-vn/city/da-nang-vn.html">
+                  <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                   <img loading="lazy" width="200px" data-element-name="top-destination-city-image" alt="Đà Nẵng" srcset="//pix6.agoda.net/geo/city/16440/1_16440_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/16440/1_16440_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/16440/1_16440_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/16440/1_16440_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/16440/1_16440_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/16440/1_16440_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/16440/1_16440_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                   <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Đà Nẵng</h3>
+                   <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">5,534 chỗ ở </span>
+                  </div>
+                 </a>
+                </div>
+               </div>
+              </section>
+              <section class="ae7b2-box sc-dmlrTW guKkvw ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-justify-center ae7b2-snap-start ae7b2-snap-always ae7b2-mx-s ae7b2-pb-l scroll-snap-none">
+               <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit" aria-label="Trang 5/13">
+                 <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                  <a href="/vi-vn/city/dalat-vn.html">
+                   <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                    <img loading="lazy" width="200px" data-element-name="top-destination-city-image" alt="Đà Lạt" srcset="//pix6.agoda.net/geo/city/15932/1_15932_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/15932/1_15932_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/15932/1_15932_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/15932/1_15932_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/15932/1_15932_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/15932/1_15932_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/15932/1_15932_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                    <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Đà Lạt</h3>
+                    <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">5,165 chỗ ở </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+              </section>
+              <section class="ae7b2-box sc-dmlrTW guKkvw ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-justify-center ae7b2-snap-start ae7b2-snap-always ae7b2-mx-s ae7b2-pb-l scroll-snap-none">
+               <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit"  aria-label="Trang 6/13">
+                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                 <a href="/vi-vn/city/nha-trang-vn.html">
+                  <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                     <img loading="lazy" width="200px" data-element-name="top-destination-city-image" alt="Nha Trang" srcset="//pix6.agoda.net/geo/city/2679/1_2679_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/2679/1_2679_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/2679/1_2679_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/2679/1_2679_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/2679/1_2679_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/2679/1_2679_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/2679/1_2679_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                     <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Nha Trang</h3>
+                     <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">4,098 chỗ ở </span>
+                  </div>
+                 </a>
+                </div>
+               </div>
+              </section>
+              <section class="ae7b2-box sc-dmlrTW guKkvw ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-justify-center ae7b2-snap-start ae7b2-snap-always ae7b2-mx-s ae7b2-pb-l">
+               <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit"  aria-label="Trang 7/13">
+                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                 <a href="/vi-vn/city/phan-thiet-vn.html">
+                  <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                    <img loading="lazy" width="200px" data-element-name="top-destination-city-image" alt="Phan Thiết" srcset="//pix6.agoda.net/geo/city/16264/1_16264_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/16264/1_16264_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/16264/1_16264_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/16264/1_16264_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/16264/1_16264_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/16264/1_16264_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/16264/1_16264_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                    <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Phan Thiết</h3>
+                    <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">1,605 chỗ ở </span>
+                  </div>
+                 </a>
+                </div>
+               </div>
+              </section>
+              <section class="ae7b2-box sc-dmlrTW guKkvw ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-justify-center ae7b2-snap-start ae7b2-snap-always ae7b2-mx-s ae7b2-pb-l scroll-snap-none">
+               <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit"  aria-label="Trang 8/13">
+                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                 <a href="/vi-vn/city/c-n-tho-vn.html">
+                  <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                    <img loading="lazy" width="200px" data-element-name="top-destination-city-image" alt="Cần Thơ" srcset="//pix6.agoda.net/geo/city/16079/1_16079_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/16079/1_16079_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/16079/1_16079_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/16079/1_16079_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/16079/1_16079_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/16079/1_16079_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/16079/1_16079_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                    <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Cần Thơ</h3>
+                    <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">655 chỗ ở </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </section>
+               <section class="ae7b2-box sc-dmlrTW guKkvw ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-justify-center ae7b2-snap-start ae7b2-snap-always ae7b2-mx-s ae7b2-pb-l scroll-snap-none">
+                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit"  aria-label="Trang 9/13">
+                 <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                  <a href="/vi-vn/city/hue-vn.html">
+                   <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                    <img loading="lazy" width="200px" data-element-name="top-destination-city-image" alt="Huế" srcset="//pix6.agoda.net/geo/city/3738/1_3738_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/3738/1_3738_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/3738/1_3738_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/3738/1_3738_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/3738/1_3738_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/3738/1_3738_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/3738/1_3738_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                    <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Huế</h3>
+                    <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">1,093 chỗ ở </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </section>
+               <section class="ae7b2-box sc-dmlrTW guKkvw ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-justify-center ae7b2-snap-start ae7b2-snap-always ae7b2-mx-s ae7b2-pb-l scroll-snap-none">
+                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit"  aria-label="Trang 10/13">
+                 <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                  <a href="/vi-vn/city/quy-nhon-binh-dinh-vn.html">
+                   <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                    <img loading="lazy" width="200px" data-element-name="top-destination-city-image" alt="Quy Nhơn (Bình Định)" srcset="//pix6.agoda.net/geo/city/17242/1_17242_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/17242/1_17242_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/17242/1_17242_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/17242/1_17242_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/17242/1_17242_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/17242/1_17242_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/17242/1_17242_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                    <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Quy Nhơn (Bình Định)</h3>
+                    <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">1,727 chỗ ở </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </section>
+               <section class="ae7b2-box sc-dmlrTW guKkvw ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-justify-center ae7b2-snap-start ae7b2-snap-always ae7b2-mx-s ae7b2-pb-l scroll-snap-none">
+                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit" aria-label="Trang 11/13">
+                 <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                  <a href="/vi-vn/city/h-long-vn.html">
+                   <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                    <img loading="lazy" width="200px" data-element-name="top-destination-city-image" alt="Hạ Long" srcset="//pix6.agoda.net/geo/city/17182/1_17182_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/17182/1_17182_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/17182/1_17182_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/17182/1_17182_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/17182/1_17182_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/17182/1_17182_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/17182/1_17182_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                    <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Hạ Long</h3>
+                    <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">2,981 chỗ ở </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </section>
+               <section class="ae7b2-box sc-dmlrTW guKkvw ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-justify-center ae7b2-snap-start ae7b2-snap-always ae7b2-mx-s ae7b2-pb-l scroll-snap-none">
+                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit" aria-label="Trang 12/13">
+                 <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                  <a href="/vi-vn/city/phu-quoc-island-vn.html">
+                   <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                    <img loading="lazy" width="200px" data-element-name="top-destination-city-image" alt="Đảo Phú Quốc" srcset="//pix6.agoda.net/geo/city/17188/1_17188_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/17188/1_17188_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/17188/1_17188_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/17188/1_17188_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/17188/1_17188_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/17188/1_17188_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/17188/1_17188_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                    <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Đảo Phú Quốc</h3>
+                    <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">2,236 chỗ ở </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </section>
+               <section class="ae7b2-box sc-dmlrTW guKkvw ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex ae7b2-justify-center ae7b2-snap-end ae7b2-snap-always ae7b2-mx-s ae7b2-mr-none ae7b2-pb-l">
+                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit" aria-label="Trang 13/13">
+                 <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                  <a href="/vi-vn/city/hoi-an-vn.html">
+                   <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+                    <img loading="lazy" width="200px" data-element-name="top-destination-city-image" alt="Hội An" srcset="//pix6.agoda.net/geo/city/16552/1_16552_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/16552/1_16552_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/16552/1_16552_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/16552/1_16552_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/16552/1_16552_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/16552/1_16552_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/16552/1_16552_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                    <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Hội An</h3>
+                    <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">1,916 chỗ ở </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </section>
+           </div>
+           <div aria-hidden="false" class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-h-full ae7b2-items-center ae7b2-flex ae7b2-justify-end ae7b2-pointer-events-auto ae7b2-absolute ae7b2-px-xs ae7b2-pb-l style="transition: opacity 0.35s ease-in-out; opacity: 1; top: 0px; bottom: 0px; right: 0px; z-index: 1; width: 52px;">
+            <button aria-label= "Điểm đến tiếp theo" leadingicon="fill.arrow.thin-forward" type="button" class="ae7b2-box ae7b2-bg-base-surface ae7b2-fill-base-default ae7b2-shadow-bottom-m ae7b2-text-base-default ae7b2-items-center ae7b2-cursor-pointer ae7b2-flex ae7b2-flex-col ae7b2-justify-center ae7b2-px-s ae7b2-py-s  ae7b2-rounded-max ae7b2-border-none  ae7b2-interactive  " style="width: 36px; height: 36px; --interactive-color: 37, 44, 56; --interactive-color-primary: var(--ads-colors-product-primary); --color-neutral-4: var(--ads-colors-base-inverted);">
+             <svg role="img" aria-hidden="true" opacity="1" class="sc-eCssSg sc-jSgupP  dqHgjb">
+                <use href="#5ee083f8"></use>
+             </svg>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+    </section>
+
+    <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-fixed" style="bottom: 16px; right: 16px; z-index: 1000;">
+        <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-flex">
+            <div data-element-test="prominent-app-download-popover" class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-items-center ae7b2-flex ae7b2-flex-1">
+                <button type="button" class="ae7b2-box ae7b2-bg-product-primary ae7b2-fill-base-inverted ae7b2-text-base-inverted ae7b2-items-center ae7b2-cursor-pointer ae7b2-flex ae7b2-flex-col ae7b2-justify-center ae7b2-px-xl ae7b2-py-m  ae7b2-rounded-base ae7b2-border-none  ae7b2-interactive  " style="height: 44px; --interactive-color: 255, 255, 255; --interactive-color-primary: var(--ads-colors-product-primary); --color-neutral-4: var(--ads-colors-base-inverted);">
+                    <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-items-center ae7b2-flex ae7b2-flex-row">
+                        <svg role="img" aria-hidden="true" opacity="1" class="sc-eCssSg sc-jSgupP lofOts dqHgjb">
+                            <use href="#e4c84bb0"></use>
+                        </svg>
+                        <span class="sc-jrAGrp sc-kEjbxe eDlaBj bLZsSU">Tiết kiệm nhiều hơn trên ứng dụng!</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div data-testid="drone-box" class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-mb-l"></div>
+    <div data-element-name="tile-bottom"></div>
+
+    <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">
+        <section class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-mb-xl4 ae7b2-mt-xl4">
+            <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-items-center ae7b2-flex ae7b2-justify-start ae7b2-relative ae7b2-mb-xl">
+                <h2 class="sc-jrAGrp sc-kEjbxe eDlaBj hZQUvX">Featured Homes recommended for you</h2>
+            </div>
+
+            <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit">   
+                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-mt-xl">
+
+                    <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-items-center ae7b2-flex ae7b2-justify-between">
+
+                        <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-max-w-full ae7b2-overflow-hidden ae7b2-relative">
+                            <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-items-center ae7b2-flex ae7b2-justify-start ae7b2-pointer-events-none ae7b2-absolute ae7b2-mx-s" style="transition: opacity 0.35s ease-in-out; opacity: 0; top: 0px; bottom: 0px; left: 0px; z-index: 1; width: 52px;">
+                                <button type="button" class="ae7b2-box ae7b2-bg-base-surface ae7b2-fill-base-disabled ae7b2-shadow-bottom-m ae7b2-text-base-disabled ae7b2-items-center ae7b2-cursor-default ae7b2-flex ae7b2-flex-col ae7b2-justify-center  ae7b2-rounded-max ae7b2-border-none" style="width: 28px; height: 28px;">
+                                    <svg role="img" aria-hidden="true" opacity="1" class="sc-eCssSg sc-jSgupP  kYDKOv">
+                                        <use href="#702e9b3a"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="ae7b2-box ae7b2-border-base-default ae7b2-fill-inherit ae7b2-text-inherit ae7b2-w-full ae7b2-border-solid ae7b2-flex ae7b2-overflow-x-auto ae7b2-whitespace-nowrap   ae7b2-border-none  ae7b2-no-scrollbar">
+                                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-items-center ae7b2-flex ae7b2-justify-center ae7b2-relative ae7b2-snap-start ae7b2-px-xs" style="min-height: 44px;">                                    
+                                    <button type="button" class="ae7b2-box ae7b2-bg-base-transparent ae7b2-fill-product-primary ae7b2-text-product-primary ae7b2-w-full ae7b2-items-center ae7b2-cursor-pointer ae7b2-flex ae7b2-justify-center ae7b2-text-center ae7b2-px-m ae7b2-py-xs  ae7b2-rounded-xl ae7b2-border-none  ae7b2-interactive" style="--interactive-color: 32, 103, 218; --interactive-color-primary: var(--ads-colors-product-primary); --color-neutral-4: var(--ads-colors-base-inverted);">
+                                        <p class="sc-jrAGrp sc-kEjbxe eDlaBj kDyRLU">Hồ Chí Minh</p>
+                                    </button>
+                                    <div class="ae7b2-box ae7b2-bg-product-primary ae7b2-fill-inherit ae7b2-text-inherit ae7b2-w-full ae7b2-absolute  ae7b2-rounded-tl-xs ae7b2-rounded-tr-xs ae7b2-rounded-br-none ae7b2-rounded-bl-none" style="bottom: 0px; left: 0px; right: 0px; height: 2px;"></div>
+                                </div>
+
+                                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-items-center ae7b2-flex ae7b2-justify-center ae7b2-relative ae7b2-snap-start ae7b2-px-xs" style="min-height: 44px;">
+                                    <button type="button" class="ae7b2-box ae7b2-bg-base-transparent ae7b2-fill-base-subtle ae7b2-text-base-subtle ae7b2-w-full ae7b2-items-center ae7b2-cursor-pointer ae7b2-flex ae7b2-justify-center ae7b2-text-center ae7b2-px-m ae7b2-py-xs  ae7b2-rounded-xl ae7b2-border-none  ae7b2-interactive" style="--interactive-color: 32, 103, 218; --interactive-color-primary: var(--ads-colors-product-primary); --color-neutral-4: var(--ads-colors-base-inverted);">
+                                        <p class="sc-jrAGrp sc-kEjbxe eDlaBj kDyRLU">Hà Nội</p>
+                                    </button>
+                                </div>
+
+                                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-items-center ae7b2-flex ae7b2-justify-center ae7b2-relative ae7b2-snap-start ae7b2-px-xs" style="min-height: 44px;">
+                                    <button type="button" class="ae7b2-box ae7b2-bg-base-transparent ae7b2-fill-base-subtle ae7b2-text-base-subtle ae7b2-w-full ae7b2-items-center ae7b2-cursor-pointer ae7b2-flex ae7b2-justify-center ae7b2-text-center ae7b2-px-m ae7b2-py-xs  ae7b2-rounded-xl ae7b2-border-none  ae7b2-interactive" style="--interactive-color: 32, 103, 218; --interactive-color-primary: var(--ads-colors-product-primary); --color-neutral-4: var(--ads-colors-base-inverted);">
+                                        <p class="sc-jrAGrp sc-kEjbxe eDlaBj kDyRLU">Đà Lạt</p>
+                                    </button>
+                                </div>
+
+                                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-items-center ae7b2-flex ae7b2-justify-center ae7b2-relative ae7b2-snap-start ae7b2-px-xs" style="min-height: 44px;">
+                                    <button type="button" class="ae7b2-box ae7b2-bg-base-transparent ae7b2-fill-base-subtle ae7b2-text-base-subtle ae7b2-w-full ae7b2-items-center ae7b2-cursor-pointer ae7b2-flex ae7b2-justify-center ae7b2-text-center ae7b2-px-m ae7b2-py-xs  ae7b2-rounded-xl ae7b2-border-none  ae7b2-interactive" style="--interactive-color: 32, 103, 218; --interactive-color-primary: var(--ads-colors-product-primary); --color-neutral-4: var(--ads-colors-base-inverted);">
+                                        <p class="sc-jrAGrp sc-kEjbxe eDlaBj kDyRLU">Vũng Tàu</p>
+                                    </button>
+                                </div>
+                                
+                                <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-items-center ae7b2-flex ae7b2-justify-center ae7b2-relative ae7b2-snap-start ae7b2-px-xs" style="min-height: 44px;">
+                                    <button type="button" class="ae7b2-box ae7b2-bg-base-transparent ae7b2-fill-base-subtle ae7b2-text-base-subtle ae7b2-w-full ae7b2-items-center ae7b2-cursor-pointer ae7b2-flex ae7b2-justify-center ae7b2-text-center ae7b2-px-m ae7b2-py-xs  ae7b2-rounded-xl ae7b2-border-none  ae7b2-interactive  " style="--interactive-color: 32, 103, 218; --interactive-color-primary: var(--ads-colors-product-primary); --color-neutral-4: var(--ads-colors-base-inverted);">
+                                        <p class="sc-jrAGrp sc-kEjbxe eDlaBj kDyRLU">Đà Nẵng</p>
+                                    </button>
+                                </div>
+                            </div>                            
+                            <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-items-center ae7b2-flex ae7b2-justify-end ae7b2-pointer-events-none ae7b2-absolute ae7b2-mx-s" style="transition: opacity 0.35s ease-in-out; opacity: 0; top: 0px; bottom: 0px; right: 0px; z-index: 1; width: 52px;">
+                                <button type="button" class="ae7b2-box ae7b2-bg-base-surface ae7b2-fill-base-disabled ae7b2-shadow-bottom-m ae7b2-text-base-disabled ae7b2-items-center ae7b2-cursor-default ae7b2-flex ae7b2-flex-col ae7b2-justify-center  ae7b2-rounded-max ae7b2-border-none" style="width: 28px; height: 28px;">
+                                    <svg opacity="1" class="sc-eCssSg sc-jSgupP  kYDKOv">
+                                        <use href="#5ee083f8"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-items-center ae7b2-flex ae7b2-flex-row">
+                            <a href="/search?city=13170" class="sc-hBEYos enZWKv">
+                                <span class="sc-jrAGrp sc-kEjbxe eDlaBj kkujFw sc-kstrdz btjemE" label="See more (Hồ Chí Minh) properties">See more (Hồ Chí Minh) properties
+                                    <svg opacity="1" class="sc-eCssSg sc-jSgupP bwhnDL hPNJTQ">
+                                        <use href="#5ee083f8"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="ae7b2-box ae7b2-fill-inherit ae7b2-text-inherit ae7b2-mt-xl">
+                        <div class="sc-cBNfnY kaJhLf">
+                            <div class="sc-gWHgXt givPti">
+                                <a href="/start-house-sleep-box-walk-5-minutes-to-the-airport/hotel/all/ho-chi-minh-city-vn.html?checkIn=2024-12-9&amp;los=1&amp;room=1&amp;adults=2">
+                                    <div class="sc-cBNfnY fCJqEb">
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-relative a16dd-mb-m">
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-absolute a16dd-mt-m" style="right: 12px;">
+                                                    <div class="a16dd-box a16dd-bg-product-primary a16dd-fill-inherit a16dd-text-inherit a16dd-p-xs  a16dd-rounded-s" style="width: 30px;">
+                                                        <p class="sc-jrAGrp sc-kEjbxe eDlaBj iZPEod">9.3</p>
+                                                    </div>
+                                                </div>
+                                                <img alt="Mơ Mơ Residence" srcset="//pix8.agoda.net/hotelImages/63639407/0/87daa4c153518de5f0024bb4886f146c.jpg?ce=0&amp;s=16x 16w, //pix8.agoda.net/hotelImages/63639407/0/87daa4c153518de5f0024bb4886f146c.jpg?ce=0&amp;s=116x 116w, //pix8.agoda.net/hotelImages/63639407/0/87daa4c153518de5f0024bb4886f146c.jpg?ce=0&amp;s=375x 375w, //pix8.agoda.net/hotelImages/63639407/0/87daa4c153518de5f0024bb4886f146c.jpg?ce=0&amp;s=600x 600w, //pix8.agoda.net/hotelImages/63639407/0/87daa4c153518de5f0024bb4886f146c.jpg?ce=0&amp;s=800x 800w, //pix8.agoda.net/hotelImages/63639407/0/87daa4c153518de5f0024bb4886f146c.jpg?ce=0&amp;s=1024x 1024w" src="//pix8.agoda.net/hotelImages/63639407/0/87daa4c153518de5f0024bb4886f146c.jpg?ce=0" class="sc-fFubgz sc-bkzZxe  flQkdU" sizes="263px">
+                                            </div>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <p class="sc-jrAGrp sc-kEjbxe eDlaBj bJKWVu">Mơ Mơ Residence</p>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-items-center a16dd-flex a16dd-flex-row a16dd-flex-wrap a16dd-gap-xs">
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-inline-block">
+                                                    <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-flex">
+                                                        <span class="sc-crrsfI iDhzRL">Star</span>
+                                                        <svg opacity="1" class="sc-eCssSg sc-jSgupP  gCweWD">
+                                                            <use href="#0d2b5ddf"></use>
+                                                        </svg>
+                                                        <svg opacity="1" class="sc-eCssSg sc-jSgupP  gCweWD">
+                                                            <use href="#0d2b5ddf"></use>
+                                                        </svg>
+                                                        <svg opacity="1" class="sc-eCssSg sc-jSgupP  gCweWD">
+                                                            <use href="#0d2b5ddf"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <svg opacity="1" class="sc-eCssSg sc-jSgupP  jeusdc">
+                                                    <use href="#2b524853"></use>
+                                                </svg>
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                    <span class="sc-jrAGrp sc-kEjbxe eDlaBj eyKDvX ads-non-interactive">Phú Nhuận,</span>
+                                                </div>
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                    <span class="sc-jrAGrp sc-kEjbxe eDlaBj eyKDvX ads-non-interactive">Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <span class="sc-jrAGrp sc-kEjbxe eDlaBj heknOx">Giá mỗi đêm chưa gồm thuế và phí</span>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-gap-xs">
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                    <p class="sc-jrAGrp sc-kEjbxe eDlaBj iiQqRW">VND</p>
+                                                </div>
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                    <p class="sc-jrAGrp sc-kEjbxe eDlaBj iiQqRW">833.333</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sc-gWHgXt givPti">
+                                <a href="/siris-residence/hotel/ho-chi-minh-city-vn.html?checkIn=2024-12-12&amp;los=1&amp;room=1&amp;adults=2">
+                                    <div class="sc-cBNfnY fCJqEb">
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-relative a16dd-mb-m">
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-absolute a16dd-mt-m" style="right: 12px;">
+                                                    <div class="a16dd-box a16dd-bg-product-primary a16dd-fill-inherit a16dd-text-inherit a16dd-p-xs  a16dd-rounded-s" style="width: 30px;">
+                                                        <p class="sc-jrAGrp sc-kEjbxe eDlaBj iZPEod">8.4</p>
+                                                    </div>
+                                                </div>
+                                                <img srcset="//pix8.agoda.net/hotelImages/55495024/-1/9d3e925576608b548fc1762b00ea65ee.jpg?ce=0&amp;s=16x 16w, //pix8.agoda.net/hotelImages/55495024/-1/9d3e925576608b548fc1762b00ea65ee.jpg?ce=0&amp;s=116x 116w, //pix8.agoda.net/hotelImages/55495024/-1/9d3e925576608b548fc1762b00ea65ee.jpg?ce=0&amp;s=375x 375w, //pix8.agoda.net/hotelImages/55495024/-1/9d3e925576608b548fc1762b00ea65ee.jpg?ce=0&amp;s=600x 600w, //pix8.agoda.net/hotelImages/55495024/-1/9d3e925576608b548fc1762b00ea65ee.jpg?ce=0&amp;s=800x 800w, //pix8.agoda.net/hotelImages/55495024/-1/9d3e925576608b548fc1762b00ea65ee.jpg?ce=0&amp;s=1024x 1024w" src="//pix8.agoda.net/hotelImages/55495024/-1/9d3e925576608b548fc1762b00ea65ee.jpg?ce=0" class="sc-fFubgz sc-bkzZxe  flQkdU" sizes="263px">
+                                            </div>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <p class="sc-jrAGrp sc-kEjbxe eDlaBj bJKWVu">Siris Niko Residence</p>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-items-center a16dd-flex a16dd-flex-row a16dd-flex-wrap a16dd-gap-xs">
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-inline-block">
+                                                    <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-flex">
+                                                        <span class="sc-crrsfI iDhzRL">Star</span>
+                                                        <svg opacity="1" class="sc-eCssSg sc-jSgupP  gCweWD">
+                                                            <use href="#0d2b5ddf"></use>
+                                                        </svg>
+                                                        <svg opacity="1" class="sc-eCssSg sc-jSgupP  gCweWD">
+                                                            <use href="#0d2b5ddf"></use>
+                                                        </svg>
+                                                        <svg opacity="1" class="sc-eCssSg sc-jSgupP  gCweWD">
+                                                            <use href="#0d2b5ddf"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <svg opacity="1" class="sc-eCssSg sc-jSgupP  jeusdc">
+                                                    <use href="#2b524853"></use>
+                                                </svg>
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                    <span class="sc-jrAGrp sc-kEjbxe eDlaBj eyKDvX ads-non-interactive">Quận 7,</span>
+                                                </div>
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                    <span class="sc-jrAGrp sc-kEjbxe eDlaBj eyKDvX ads-non-interactive">Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <span class="sc-jrAGrp sc-kEjbxe eDlaBj heknOx">Giá mỗi đêm chưa gồm thuế và phí</span>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-gap-xs">
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                    <p class="sc-jrAGrp sc-kEjbxe eDlaBj iiQqRW">VND</p>
+                                                </div>
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                    <p class="sc-jrAGrp sc-kEjbxe eDlaBj iiQqRW">370.046</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sc-gWHgXt givPti">
+                                <a href="/cozrum-homes-charming-corner/hotel/ho-chi-minh-city-vn.html?checkIn=2024-12-12&amp;los=1&amp;room=1&amp;adults=2">
+                                    <div class="sc-cBNfnY fCJqEb">
+                                        <div class="sc-gWHgXt jbMyMR">
+                                        <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-relative a16dd-mb-m">
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-absolute a16dd-mt-m" style="right: 12px;">
+                                                <div class="a16dd-box a16dd-bg-product-primary a16dd-fill-inherit a16dd-text-inherit a16dd-p-xs  a16dd-rounded-s" style="width: 30px;">
+                                                    <p class="sc-jrAGrp sc-kEjbxe eDlaBj iZPEod">7.6</p>
+                                                </div>
+                                            </div>
+                                            <img srcset="//pix8.agoda.net/hotelImages/13752940/-1/682945f2f6c3991768e001edc472a217.jpg?ca=13&amp;ce=1&amp;s=16x 16w, //pix8.agoda.net/hotelImages/13752940/-1/682945f2f6c3991768e001edc472a217.jpg?ca=13&amp;ce=1&amp;s=116x 116w, //pix8.agoda.net/hotelImages/13752940/-1/682945f2f6c3991768e001edc472a217.jpg?ca=13&amp;ce=1&amp;s=375x 375w, //pix8.agoda.net/hotelImages/13752940/-1/682945f2f6c3991768e001edc472a217.jpg?ca=13&amp;ce=1&amp;s=600x 600w, //pix8.agoda.net/hotelImages/13752940/-1/682945f2f6c3991768e001edc472a217.jpg?ca=13&amp;ce=1&amp;s=800x 800w, //pix8.agoda.net/hotelImages/13752940/-1/682945f2f6c3991768e001edc472a217.jpg?ca=13&amp;ce=1&amp;s=1024x 1024w" src="//pix8.agoda.net/hotelImages/13752940/-1/682945f2f6c3991768e001edc472a217.jpg?ca=13&amp;ce=1" class="sc-fFubgz sc-bkzZxe  flQkdU" sizes="263px">
+                                        </div>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                        <p class="sc-jrAGrp sc-kEjbxe eDlaBj bJKWVu">Cozrum Homes Charming Corner</p>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                        <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-items-center a16dd-flex a16dd-flex-row a16dd-flex-wrap a16dd-gap-xs">
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-inline-block">
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-flex">
+                                                    <span class="sc-crrsfI iDhzRL">Star</span>
+                                                    <svg opacity="1" class="sc-eCssSg sc-jSgupP  gCweWD">
+                                                        <use href="#0d2b5ddf"></use>
+                                                    </svg>
+                                                    <svg opacity="1" class="sc-eCssSg sc-jSgupP  gCweWD">
+                                                        <use href="#0d2b5ddf"></use>
+                                                    </svg>
+                                                    <svg opacity="1" class="sc-eCssSg sc-jSgupP  gCweWD">
+                                                        <use href="#0d2b5ddf"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <svg opacity="1" class="sc-eCssSg sc-jSgupP  jeusdc">
+                                                <use href="#2b524853"></use>
+                                            </svg>
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                <span class="sc-jrAGrp sc-kEjbxe eDlaBj eyKDvX ads-non-interactive">Quận 3,</span>
+                                            </div>
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                <span class="sc-jrAGrp sc-kEjbxe eDlaBj eyKDvX ads-non-interactive">Hồ Chí Minh</span>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                        <span class="sc-jrAGrp sc-kEjbxe eDlaBj heknOx">Giá mỗi đêm chưa gồm thuế và phí</span>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                        <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-gap-xs">
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                <p class="sc-jrAGrp sc-kEjbxe eDlaBj iiQqRW">VND</p>
+                                            </div>
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                <p class="sc-jrAGrp sc-kEjbxe eDlaBj iiQqRW">437.907</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sc-gWHgXt givPti">
+                                <a href="/123-apartment-in-vinhomes-central-park-landmark-81/hotel/ho-chi-minh-city-vn.html?checkIn=2024-12-12&amp;los=1&amp;room=1&amp;adults=2">
+                                    <div class="sc-cBNfnY fCJqEb">
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-relative a16dd-mb-m">
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-absolute a16dd-mt-m" style="right: 12px;">
+                                                    <div class="a16dd-box a16dd-bg-product-primary a16dd-fill-inherit a16dd-text-inherit a16dd-p-xs  a16dd-rounded-s" style="width: 30px;">
+                                                        <p class="sc-jrAGrp sc-kEjbxe eDlaBj iZPEod">7.5</p>
+                                                    </div>
+                                                </div>
+                                                <img srcset="//pix8.agoda.net/hotelImages/63123137/0/9632e3544a1750bd87dccf4e80520e38.jpg?ce=0&amp;s=16x 16w, //pix8.agoda.net/hotelImages/63123137/0/9632e3544a1750bd87dccf4e80520e38.jpg?ce=0&amp;s=116x 116w, //pix8.agoda.net/hotelImages/63123137/0/9632e3544a1750bd87dccf4e80520e38.jpg?ce=0&amp;s=375x 375w, //pix8.agoda.net/hotelImages/63123137/0/9632e3544a1750bd87dccf4e80520e38.jpg?ce=0&amp;s=600x 600w, //pix8.agoda.net/hotelImages/63123137/0/9632e3544a1750bd87dccf4e80520e38.jpg?ce=0&amp;s=800x 800w, //pix8.agoda.net/hotelImages/63123137/0/9632e3544a1750bd87dccf4e80520e38.jpg?ce=0&amp;s=1024x 1024w" src="//pix8.agoda.net/hotelImages/63123137/0/9632e3544a1750bd87dccf4e80520e38.jpg?ce=0" class="sc-fFubgz sc-bkzZxe  flQkdU" sizes="263px">
+                                            </div>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <p class="sc-jrAGrp sc-kEjbxe eDlaBj bJKWVu">123 Apartment - Vinhomes Central Park Landmark 81</p>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-items-center a16dd-flex a16dd-flex-row a16dd-flex-wrap a16dd-gap-xs">
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-inline-block">
+                                                    <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-flex">
+                                                        <span class="sc-crrsfI iDhzRL">Star</span>
+                                                        <svg opacity="1" class="sc-eCssSg sc-jSgupP  gCweWD">
+                                                            <use href="#0d2b5ddf"></use>
+                                                        </svg>
+                                                        <svg opacity="1" class="sc-eCssSg sc-jSgupP  gCweWD">
+                                                            <use href="#0d2b5ddf"></use>
+                                                        </svg>
+                                                        <svg opacity="1" class="sc-eCssSg sc-jSgupP  gCweWD">
+                                                            <use href="#0d2b5ddf"></use>
+                                                        </svg>
+                                                        <svg opacity="1" class="sc-eCssSg sc-jSgupP  gCweWD">
+                                                            <use href="#0d2b5ddf"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <svg opacity="1" class="sc-eCssSg sc-jSgupP  jeusdc">
+                                                    <use href="#2b524853"></use>
+                                                </svg>
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                    <span class="sc-jrAGrp sc-kEjbxe eDlaBj eyKDvX ads-non-interactive">Bình Thạnh,</span>
+                                                </div>
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                    <span class="sc-jrAGrp sc-kEjbxe eDlaBj eyKDvX ads-non-interactive">Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <span class="sc-jrAGrp sc-kEjbxe eDlaBj heknOx">Giá mỗi đêm chưa gồm thuế và phí</span>
+                                        </div>
+                                        <div class="sc-gWHgXt jbMyMR">
+                                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-gap-xs">
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                    <p class="sc-jrAGrp sc-kEjbxe eDlaBj iiQqRW">VND</p>
+                                                </div>
+                                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                                    <p class="sc-jrAGrp sc-kEjbxe eDlaBj iiQqRW">1.101.068</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="AdsContainerHome">
+        <div class="AdsBanner sc-jONnTn gNfhbd AdsSlot1">
+        </div>
+    </section>
+
+    <section class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-mb-xl4 a16dd-mt-xl4.7">
+        <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-items-center a16dd-flex a16dd-justify-start a16dd-relative a16dd-mb-xl">
+            <h2 class="sc-jrAGrp sc-kEjbxe eDlaBj hZQUvX">Các điểm đến nổi tiếng ngoài Việt Nam</h2>
+        </div>
+        <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-overflow-x-hidden a16dd-relative a16dd-mt-xl">
+                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-relative">
+                    <div class="a16dd-box sc-hHftDr cMViey a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-overflow-x-auto a16dd-overflow-y-hidden">
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l      " aria-hidden="true" inert="">
+                        </section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none">
+                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                    <a href="/vi-vn/city/tokyo-jp.html">
+                                        <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                            <img srcset="//pix6.agoda.net/geo/city/5085/1_5085_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/5085/1_5085_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/5085/1_5085_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/5085/1_5085_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/5085/1_5085_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/5085/1_5085_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/5085/1_5085_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                                            <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje">Tokyo</h3>
+                                            <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">12,486 chỗ ở </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none">
+                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                    <a href="/vi-vn/city/bangkok-th.html">
+                                        <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                            <img srcset="//pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                                            <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje">Bangkok</h3>
+                                            <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">12,048 chỗ ở </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none">
+                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                    <a href="/vi-vn/city/nagoya-jp.html">
+                                        <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                            <img srcset="//pix6.agoda.net/geo/city/13740/1_13740_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/13740/1_13740_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/13740/1_13740_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/13740/1_13740_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/13740/1_13740_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/13740/1_13740_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/13740/1_13740_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                                            <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Nagoya</h3>
+                                            <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">1,183 chỗ ở </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l">
+                            <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                    <a href="/vi-vn/city/kyoto-jp.html">
+                                        <div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit">
+                                            <img srcset="//pix6.agoda.net/geo/city/1784/781e6dd556d97ff5559b56acb76b1d58.jpg?ce=0&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/1784/781e6dd556d97ff5559b56acb76b1d58.jpg?ce=0&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/1784/781e6dd556d97ff5559b56acb76b1d58.jpg?ce=0&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/1784/781e6dd556d97ff5559b56acb76b1d58.jpg?ce=0&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/1784/781e6dd556d97ff5559b56acb76b1d58.jpg?ce=0&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/1784/781e6dd556d97ff5559b56acb76b1d58.jpg?ce=0&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/1784/781e6dd556d97ff5559b56acb76b1d58.jpg?ce=0&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px">
+                                            <h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje">Kyoto</h3>
+                                            <span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">6,987 chỗ ở </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none">
+                            <div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="1808" role="group" aria-label="Trang 6/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/johor-bahru-my.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Johor Bahru" srcset="//pix6.agoda.net/geo/city/1808/0fdfe2e24c886b78b03e2d0c0eb8df8e.jpg?ce=0&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/1808/0fdfe2e24c886b78b03e2d0c0eb8df8e.jpg?ce=0&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/1808/0fdfe2e24c886b78b03e2d0c0eb8df8e.jpg?ce=0&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/1808/0fdfe2e24c886b78b03e2d0c0eb8df8e.jpg?ce=0&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/1808/0fdfe2e24c886b78b03e2d0c0eb8df8e.jpg?ce=0&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/1808/0fdfe2e24c886b78b03e2d0c0eb8df8e.jpg?ce=0&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/1808/0fdfe2e24c886b78b03e2d0c0eb8df8e.jpg?ce=0&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Johor Bahru</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">6,994 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="4590" role="group" aria-label="Trang 7/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/yokohama-jp.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Yokohama" srcset="//pix6.agoda.net/geo/city/4590/1_4590_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/4590/1_4590_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/4590/1_4590_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/4590/1_4590_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/4590/1_4590_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/4590/1_4590_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/4590/1_4590_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Yokohama</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">674 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="14690" role="group" aria-label="Trang 8/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/seoul-kr.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Seoul" srcset="//pix6.agoda.net/geo/city/14690/0d6f4afc6f404e65092123bead23f8ce.jpg?ce=0&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/14690/0d6f4afc6f404e65092123bead23f8ce.jpg?ce=0&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/14690/0d6f4afc6f404e65092123bead23f8ce.jpg?ce=0&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/14690/0d6f4afc6f404e65092123bead23f8ce.jpg?ce=0&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/14690/0d6f4afc6f404e65092123bead23f8ce.jpg?ce=0&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/14690/0d6f4afc6f404e65092123bead23f8ce.jpg?ce=0&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/14690/0d6f4afc6f404e65092123bead23f8ce.jpg?ce=0&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Seoul</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">5,945 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="4816" role="group" aria-label="Trang 9/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/phnom-penh-kh.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Phnom Penh" srcset="//pix6.agoda.net/geo/city/4816/1_4816_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/4816/1_4816_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/4816/1_4816_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/4816/1_4816_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/4816/1_4816_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/4816/1_4816_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/4816/1_4816_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Phnom Penh</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">1,458 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="14524" role="group" aria-label="Trang 10/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/kuala-lumpur-my.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Kuala Lumpur" srcset="//pix6.agoda.net/geo/city/14524/0435b08918aeb5e6ba2c933def5a3b57.jpg?ce=0&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/14524/0435b08918aeb5e6ba2c933def5a3b57.jpg?ce=0&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/14524/0435b08918aeb5e6ba2c933def5a3b57.jpg?ce=0&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/14524/0435b08918aeb5e6ba2c933def5a3b57.jpg?ce=0&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/14524/0435b08918aeb5e6ba2c933def5a3b57.jpg?ce=0&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/14524/0435b08918aeb5e6ba2c933def5a3b57.jpg?ce=0&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/14524/0435b08918aeb5e6ba2c933def5a3b57.jpg?ce=0&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Kuala Lumpur</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">19,902 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="3435" role="group" aria-label="Trang 11/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/sapporo-jp.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Sapporo" srcset="//pix6.agoda.net/geo/city/3435/1_3435_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/3435/1_3435_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/3435/1_3435_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/3435/1_3435_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/3435/1_3435_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/3435/1_3435_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/3435/1_3435_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Sapporo</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">2,640 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="4064" role="group" aria-label="Trang 12/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/singapore-sg.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Singapore" srcset="//pix6.agoda.net/geo/city/4064/1_4064_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/4064/1_4064_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/4064/1_4064_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/4064/1_4064_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/4064/1_4064_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/4064/1_4064_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/4064/1_4064_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Singapore</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">1,326 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="9395" role="group" aria-label="Trang 13/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/bangkok-th.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Bangkok" srcset="//pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Bangkok</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">12,048 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="16527" role="group" aria-label="Trang 14/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/fukuoka-jp.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Fukuoka" srcset="//pix6.agoda.net/geo/city/16527/1_16527_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/16527/1_16527_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/16527/1_16527_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/16527/1_16527_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/16527/1_16527_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/16527/1_16527_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/16527/1_16527_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Fukuoka</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">2,181 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="4951" role="group" aria-label="Trang 15/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/taipei-tw.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Đài Bắc" srcset="//pix6.agoda.net/geo/city/4951/1_4951_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/4951/1_4951_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/4951/1_4951_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/4951/1_4951_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/4951/1_4951_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/4951/1_4951_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/4951/1_4951_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Đài Bắc</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">3,566 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="1622" role="group" aria-label="Trang 16/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/manila-ph.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Manila" srcset="//pix6.agoda.net/geo/city/1622/1_1622_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/1622/1_1622_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/1622/1_1622_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/1622/1_1622_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/1622/1_1622_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/1622/1_1622_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/1622/1_1622_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Manila</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">13,223 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="106352" role="group" aria-label="Trang 17/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/narita-jp.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Narita" srcset="//pix6.agoda.net/geo/city/106352/8ab949a441eec4976d4c55630004a089.jpg?ca=0&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/106352/8ab949a441eec4976d4c55630004a089.jpg?ca=0&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/106352/8ab949a441eec4976d4c55630004a089.jpg?ca=0&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/106352/8ab949a441eec4976d4c55630004a089.jpg?ca=0&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/106352/8ab949a441eec4976d4c55630004a089.jpg?ca=0&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/106352/8ab949a441eec4976d4c55630004a089.jpg?ca=0&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/106352/8ab949a441eec4976d4c55630004a089.jpg?ca=0&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Narita</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">123 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="17172" role="group" aria-label="Trang 18/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/busan-kr.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Busan" srcset="//pix6.agoda.net/geo/city/17172/1_17172_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/17172/1_17172_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/17172/1_17172_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/17172/1_17172_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/17172/1_17172_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/17172/1_17172_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/17172/1_17172_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Busan</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">2,734 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-start a16dd-snap-always a16dd-mx-s a16dd-pb-l scroll-snap-none"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="5235" role="group" aria-label="Trang 19/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/kobe-jp.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Kobe" srcset="//pix6.agoda.net/geo/city/5235/1_5235_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/5235/1_5235_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/5235/1_5235_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/5235/1_5235_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/5235/1_5235_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/5235/1_5235_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/5235/1_5235_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Kobe</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">1,049 chỗ ở </span></div></a></div></div></section>
+
+                        <section class="a16dd-box sc-dmlrTW guKkvw a16dd-fill-inherit a16dd-text-inherit a16dd-flex a16dd-justify-center a16dd-snap-end a16dd-snap-always a16dd-mx-s a16dd-mr-none a16dd-pb-l"><div data-element-name="top-destination-city-item" data-element-type="international" data-element-index="8584" role="group" aria-label="Trang 20/20" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><a href="/vi-vn/city/pattaya-th.html"><div class="a16dd-box a16dd-fill-inherit a16dd-text-inherit      "><img data-element-name="top-destination-city-image" loading="lazy" alt="Pattaya" srcset="//pix6.agoda.net/geo/city/8584/1_8584_02.jpg?ca=6&amp;ce=1&amp;s=16x&amp;ar=1x1 16w, //pix6.agoda.net/geo/city/8584/1_8584_02.jpg?ca=6&amp;ce=1&amp;s=116x&amp;ar=1x1 116w, //pix6.agoda.net/geo/city/8584/1_8584_02.jpg?ca=6&amp;ce=1&amp;s=375x&amp;ar=1x1 375w, //pix6.agoda.net/geo/city/8584/1_8584_02.jpg?ca=6&amp;ce=1&amp;s=600x&amp;ar=1x1 600w, //pix6.agoda.net/geo/city/8584/1_8584_02.jpg?ca=6&amp;ce=1&amp;s=800x&amp;ar=1x1 800w, //pix6.agoda.net/geo/city/8584/1_8584_02.jpg?ca=6&amp;ce=1&amp;s=1024x&amp;ar=1x1 1024w" src="//pix6.agoda.net/geo/city/8584/1_8584_02.jpg?ca=6&amp;ce=1&amp;s=345x345&amp;ar=1x1" class="sc-fFubgz sc-bkzZxe  bSwUia" sizes="200px"><h3 class="sc-jrAGrp sc-kEjbxe bylNHt gEUHje" data-testid="destination-card-city-name">Pattaya</h3><span class="sc-jrAGrp sc-kEjbxe iKkPTS bXjEEo">11,909 chỗ ở </span></div></a></div></div></section>
+                    </div>
+                    <div aria-hidden="false" class="a16dd-box a16dd-fill-inherit a16dd-text-inherit a16dd-h-full a16dd-items-center a16dd-flex a16dd-justify-end a16dd-pointer-events-auto a16dd-absolute a16dd-px-xs a16dd-pb-l      " style="transition: opacity 0.35s ease-in-out; opacity: 1; top: 0px; bottom: 0px; right: 0px; z-index: 1; width: 52px;"><button aria-label="	Điểm đến tiếp theo" leadingicon="fill.arrow.thin-forward" type="button" class="a16dd-box a16dd-bg-base-surface a16dd-fill-base-default a16dd-shadow-bottom-m a16dd-text-base-default a16dd-items-center a16dd-cursor-pointer a16dd-flex a16dd-flex-col a16dd-justify-center a16dd-px-s a16dd-py-s  a16dd-rounded-max a16dd-border-none  a16dd-interactive  " style="width: 36px; height: 36px; --interactive-color: 37, 44, 56; --interactive-color-primary: var(--ads-colors-product-primary); --color-neutral-4: var(--ads-colors-base-inverted);"><svg role="img" aria-hidden="true" opacity="1" class="sc-eCssSg sc-jSgupP  dqHgjb"><use href="#5ee083f8"></use></svg></button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+        </div>
+    </main>
+</div>    
+
+    <section>
+        <div class="Box-sc-kv6pi1-0 ebYBDp">
+            <div class="Box-sc-kv6pi1-0 ecnbjK" style="margin: auto;">
+                <div class="Box-sc-kv6pi1-0 bTfdsi">
+                    <h5 class="Typographystyled__TypographyStyled-sc-j18mtu-0 hXOUQX kite-js-Typography ">Trợ giúp</h5>
+                    <ul class="LinksListGroup-list">
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="/vi-vn/info/contact.html" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Trung tâm trợ giúp</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="/vi-vn/info/contact.html" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Câu hỏi thường gặp</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="/vi-vn/info/privacy.html" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Chính sách Bảo mật</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="/vi-vn/info/privacy.html#cookies" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Chính sách về cookie</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="/vi-vn/info/termsofuse.html" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Điều khoản sử dụng</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="/vi-vn/privacy-settings" target="_blank" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Quản lý thiết lập cookie</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="/vi-vn/info/eu-digital-services-act.html" target="_blank" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Đạo luật Dịch vụ số (EU)</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="/vi-vn/info/eu-digital-services-act.html#CM" target="_blank" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Nguyên tắc và báo cáo nội dung</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="//www.bookingholdings.com/modern-slavery-statement/" target="_blank" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link" data-selenium="modern-slavery-statement">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Tuyên bố về Đạo luật Nô lệ Hiện đại</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Box-sc-kv6pi1-0 bTfdsi">
+                    <h5 class="Typographystyled__TypographyStyled-sc-j18mtu-0 hXOUQX kite-js-Typography ">Công ty</h5>
+                    <ul class="LinksListGroup-list">
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="/vi-vn/about-agoda" target="_blank" id="footer-new-about-us" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Về chúng tôi</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="//careersatagoda.com" target="_blank" id="footer-careers" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Tuyển dụng</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="//mediaroom.agoda.com" target="_blank" id="footer-media" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Báo chí</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="/vi-vn/blog" target="_blank" id="footer-blog" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Nhật ký mạng</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="//www.agoda.com/vi-vn/pointsmax.html" id="footer-points-max" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Ứng dụng Android</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Box-sc-kv6pi1-0 bTfdsi">
+                    <h5 class="Typographystyled__TypographyStyled-sc-j18mtu-0 hXOUQX kite-js-Typography ">Điểm du lịch</h5>
+                    <ul class="LinksListGroup-list">
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="//www.agoda.com/vi-vn/world.html" id="footer-destination-countries" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Quốc gia</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="//www.agoda.com/vi-vn/flights/world.html" id="footer-flights-all-routes" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Mọi chặng bay</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Box-sc-kv6pi1-0 bTfdsi">
+                    <h5 class="Typographystyled__TypographyStyled-sc-j18mtu-0 hXOUQX kite-js-Typography">Đối tác của chúng tôi</h5>
+                    <ul class="LinksListGroup-list">
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="////ycs.agoda.com/vi-vn" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Cổng thông tin đối tác YCS</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="//partnerhub.agoda.com/" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Partner Hub</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="//partnerhub.agoda.com/advertising-solutions/" target="_blank" id="footer-partner-advertise" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Quảng cáo trên Agoda</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="////partners.agoda.com/vi-vn/index.html" target="_blank" id="footer-partner-affiliates" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link" data-selenium="footer-partner-affiliates">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Đối tác liên kết</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="//developer.agoda.com/" target="_blank" id="footer-partner-affiliates" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Tư liệu API Agoda</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Box-sc-kv6pi1-0 bTfdsi">
+                    <h5 class="Typographystyled__TypographyStyled-sc-j18mtu-0 hXOUQX kite-js-Typography ">Tải ứng dụng</h5>
+                    <ul class="LinksListGroup-list">
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="//app.appsflyer.com/id440676901?pid=direct&amp;c=hotel_page_footer&amp;af_siteid=1716632&amp;site_id=1716632&amp;af_sub1=desktop" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Ứng dụng iOS</p>
+                            </a>
+                        </li>
+                        <li class="Box-sc-kv6pi1-0 hRUYUu LinksListLink">
+                            <a href="//app.appsflyer.com/com.agoda.mobile.consumer?pid=direct&amp;c=hotel_page_footer&amp;af_siteid=1716632&amp;site_id=1716632&amp;af_sub1=desktop" class="Linkstyled__LinkStyled-sc-17yyd6k-0 fKIcfn LinksListLink-link">
+                                <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 DKsEd kite-js-Typography sc-biBrSq lihvGf">Ứng dụng Android</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Footer-topDestinations">
+        <div class="SeoLinks l-container">
+            <table style="width: 100%" cellspacing="0" cellpadding="10">
+                <tbody>
+                    <tr>
+                        <td style="width: 14%;">
+                            <ul>
+                                <li>
+                                    <span>Các thành phố tại điểm đến</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Châu á</span>
+                                </li>
+                                <li>
+                                        <a href="/city/bali-id.html" title="Khách sạn Bali">Khách sạn Bali</a>
+                                </li>
+                                <li>
+                                        <a href="/city/bandung-id.html" title="Khách sạn Bandung">Khách sạn Bandung</a>
+                                </li>
+                                <li>
+                                        <a href="/city/bangkok-th.html" title="Khách sạn Bangkok">Khách sạn Bangkok</a>
+                                </li>
+                                <li>
+                                        <a href="/city/boracay-island-ph.html" title="Khách sạn đảo Boracay">Khách sạn đảo Boracay</a>
+                                </li>
+                                <li>
+                                        <a href="/city/busan-kr.html" title="Khách sạn Busan">Khách sạn Busan</a>
+                                </li>
+                                <li>
+                                        <a href="/city/cebu-ph.html" title="Khách sạn Cebu">Khách sạn Cebu</a>
+                                </li>
+                                <li>
+                                        <a href="/city/chiang-mai-th.html" title="Khách sạn Chiang Mai">Khách sạn Chiang Mai</a>
+                                </li>
+                                <li>
+                                        <a href="/city/da-nang-vn.html" title="Khách sạn Đà Nẵng">Khách sạn Đà Nẵng</a>
+                                </li>
+                                <li>
+                                    <a href="/city/fukuoka-jp.html" title="Khách sạn Fukuoka">Khách sạn Fukuoka</a>
+                                </li>
+                                <li>
+                                        <a href="/city/kuala-lumpur-my.html" title="Khách sạn Kuala Lumpur">Khách sạn Kuala Lumpur</a>
+                                </li>
+                                <li>
+                                        <a href="/city/kuantan-my.html" title="Khách sạn Kuantan">Khách sạn Kuantan</a>
+                                </li>
+                                <li>
+                                        <a href="/city/kyoto-jp.html" title="Khách sạn Kyoto">Khách sạn Kyoto</a>
+                                </li>
+                                <li>
+                                        <a href="/city/hanoi-vn.html" title="Khách sạn Hà Nội">Khách sạn Hà Nội</a>
+                                </li>
+                                <li>
+                                        <a href="/city/hat-yai-th.html" title="Khách sạn Hat Yai">Khách sạn Hat Yai</a>
+                                </li>
+                                <li>
+                                        <a href="/city/ho-chi-minh-city-vn.html" title="Khách sạn TP.Hồ Chí Minh">Khách sạn TP.Hồ Chí Minh</a>
+                                </li>
+                                <li>
+                                        <a href="/city/hoi-an-vn.html" title="Khách sạn Hội An">Khách sạn Hội An</a>
+                                </li>
+                                <li>
+                                        <a href="/city/hong-kong-hk.html" title="Khách sạn Hồng Kông">Khách sạn Hồng Kông</a>
+                                </li>
+                                <li>
+                                        <a href="/city/hua-hin-cha-am-th.html" title="Khách sạn Hua Hin">Khách sạn Hua Hin</a>
+                                </li>
+                                <li>
+                                        <a href="/city/hualien-tw.html" title="Khách sạn Hoa Liên">Khách sạn Hoa Liên</a>
+                                </li>
+                                <li>
+                                        <a href="/city/ipoh-my.html" title="Khách sạn Ipoh">Khách sạn Ipoh</a>
+                                </li>
+                                <li>
+                                        <a href="/city/jakarta-id.html" title="Khách sạn Jakarta">Khách sạn Jakarta</a>
+                                </li>
+                                <li>
+                                        <a href="/city/jeju-island-kr.html" title="Khách sạn Đảo Jeju">Khách sạn Đảo Jeju</a>
+                                </li>
+                                <li>
+                                        <a href="/city/johor-bahru-my.html" title="Khách sạn Johor Bahru">Khách sạn Johor Bahru</a>
+                                </li>
+                                <li>
+                                        <a href="/city/kaohsiung-tw.html" title="Khách sạn Cao Hùng">Khách sạn Cao Hùng</a>
+                                </li>
+                                <li>
+                                        <a href="/city/kota-kinabalu-my.html" title="Khách sạn Kota Kinabalu">Khách sạn Kota Kinabalu</a>
+                                </li>
+                                <li>
+                                        <a href="/city/krabi-th.html" title="Khách sạn Krabi">Khách sạn Krabi</a>
+                                </li>
+                                <li>
+                                        <a href="/city/kuala-lumpur-my.html" title="Khách sạn Kuala Lumpur">Khách sạn Kuala Lumpur</a>
+                                </li>
+                                <li>
+                                        <a href="/city/kuantan-my.html" title="Khách sạn Kuantan">Khách sạn Kuantan</a>
+                                </li>
+                                <li>
+                                        <a href="/city/kyoto-jp.html" title="Khách sạn Kyoto">Khách sạn Kyoto</a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td style="width: 14%">
+                            <ul>
+                                <li></li>
+                                <li>
+                                    <a href="/city/macau-mo.html" title="Khách sạn Macao">Khách sạn Macao</a>
+                                </li>
+                                <li>
+                                    <a href="/city/malacca-my.html" title="Khách sạn Malacca">Khách sạn Malacca</a>
+                                </li>
+                                <li>
+                                    <a href="/city/manila-ph.html" title="Khách sạn Manila">Khách sạn Manila</a>
+                                </li>
+                                <li>
+                                    <a href="/city/nagoya-jp.html" title="Khách sạn Nagoya">Khách sạn Nagoya</a>
+                                </li>
+                                <li>
+                                    <a href="/city/nha-trang-vn.html" title="Khách sạn Nha Trang">Khách sạn Nha Trang</a>
+                                </li>
+                                <li>
+                                    <a href="/city/okinawa-main-island-jp.html" title="Khách sạn Okinawa">Khách sạn Okinawa</a>
+                                </li>
+                                <li>
+                                    <a href="/city/osaka-jp.html" title="Khách sạn Osaka">Khách sạn Osaka</a>
+                                </li>
+                                <li>
+                                    <a href="/city/pattaya-th.html" title="Khách sạn Pattaya">Khách sạn Pattaya</a>
+                                </li>
+                                <li>
+                                    <a href="/city/penang-my.html" title="Khách sạn Penang">Khách sạn Penang</a>
+                                </li>
+                                <li>
+                                    <a href="/city/phuket-th.html" title="Khách sạn Phuket">Khách sạn Phuket</a>
+                                </li>
+                                <li>
+                                    <a href="/city/sapporo-jp.html" title="Khách sạn Sapporo">Khách sạn Sapporo</a>
+                                </li>
+                                <li>
+                                    <a href="/city/seoul-kr.html" title="Khách sạn Seoul">Khách sạn Seoul</a>
+                                </li>
+                                <li>
+                                    <a href="/city/shanghai-cn.html" title="Khách sạn Thượng Hải">Khách sạn Thượng Hải</a>
+                                </li>
+                                <li>
+                                    <a href="/city/singapore-sg.html" title="Khách sạn Singapore">Khách sạn Singapore</a>
+                                </li>
+                                <li>
+                                    <a href="/city/surabaya-id.html" title="Khách sạn Surabaya">Khách sạn Surabaya</a>
+                                </li>
+                                <li>
+                                    <a href="/city/taichung-tw.html" title="Khách sạn Đài Trung">Khách sạn Đài Trung</a>
+                                </li>
+                                <li>
+                                    <a href="/city/tainan-tw.html" title="Khách sạn Đài Nam">Khách sạn Đài Nam</a>
+                                </li>
+                                <li>
+                                    <a href="/city/taipei-tw.html" title="Khách sạn Đài Bắc">Khách sạn Đài Bắc</a>
+                                </li>
+                                <li>
+                                    <a href="/city/tokyo-jp.html" title="Khách sạn Tokyo">Khách sạn Tokyo</a>
+                                </li>
+                                <li>
+                                    <a href="/city/yilan-tw.html" title="Khách sạn Nghi Lan">Khách sạn Nghi Lan</a>
+                                </li>
+                                <li>
+                                    <a href="/city/yogyakarta-id.html" title="Khách sạn Yogyakarta">Khách sạn Yogyakarta</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Châu Âu</span>
+                                </li>
+                                <li>
+                                    <a href="/city/london-gb.html" title="Khách sạn Luân Đôn">Khách sạn Luân Đôn</a>
+                                </li>
+                                <li>
+                                    <a href="/city/paris-fr.html" title="Khách sạn Paris">Khách sạn Paris</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Trung Đông</span>
+                                </li>
+                                <li>
+                                    <a href="/city/dubai-ae.html" title="Khách sạn Dubai">Khách sạn Dubai</a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td style="width: 14%">
+                            <ul>
+                                <li>
+                                    <span>Quốc gia &amp; Vùng lãnh thổ</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Châu Phi</span>
+                                </li>
+                                <li>
+                                    <a href="/country/morocco.html" title="Khách sạn Ma-rốc">Khách sạn Ma-rốc</a>
+                                </li>
+                                <li>
+                                    <a href="/country/south-africa.html" title="Khách sạn Nam Phi">Khách sạn Nam Phi</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Châu Mỹ</span>
+                                </li>
+                                <li>
+                                    <a href="/country/argentina.html" title="Khách sạn Argentina">Khách sạn Argentina</a>
+                                </li>
+                                <li>
+                                    <a href="/country/brazil.html" title="Khách sạn Brazil">Khách sạn Brazil</a>
+                                </li>
+                                <li>
+                                    <a href="/country/canada.html" title="Khách sạn Canada">Khách sạn Canada</a>
+                                </li>
+                                <li>
+                                    <a href="/country/mexico.html" title="Khách sạn Mexico">Khách sạn Mexico</a>
+                                </li>
+                                <li>
+                                    <a href="/country/united-states.html" title="Khách sạn Hoa Kỳ">Khách sạn Hoa Kỳ</a>
+                                </li>
+                                <li>
+                                    <a href="/country/venezuela.html" title="Khách sạn Venezuela">Khách sạn Venezuela</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Châu Á</span>
+                                </li>
+                                <li>
+                                    <a href="/country/cambodia.html" title="Khách sạn Campuchia">Khách sạn Campuchia</a>
+                                </li>
+                                <li>
+                                    <a href="/country/china.html" title="Khách sạn Trung Quốc">Khách sạn Trung Quốc</a>
+                                </li>
+                                <li>
+                                    <a href="/country/india.html" title="Khách sạn Ấn Độ">Khách sạn Ấn Độ</a>
+                                </li>
+                                <li>
+                                    <a href="/country/indonesia.html" title="Khách sạn Indonesia">Khách sạn Indonesia</a>
+                                </li>
+                                <li>
+                                    <a href="/country/japan.html" title="Khách sạn Nhật Bản">Khách sạn Nhật Bản</a>
+                                </li>
+                                <li>
+                                    <a href="/country/laos.html" title="Khách sạn Lào">Khách sạn Lào</a>
+                                </li>
+                                <li>
+                                    <a href="/country/malaysia.html" title="Khách sạn Malaysia">Khách sạn Malaysia</a>
+                                </li>
+                                <li>
+                                    <a href="/country/myanmar.html" title="Khách sạn Myanmar">Khách sạn Myanmar</a>
+                                </li>
+                                <li>
+                                    <a href="/country/nepal.html" title="Khách sạn Nepal">Khách sạn Nepal</a>
+                                </li>
+                                <li>
+                                    <a href="/country/philippines.html" title="Khách sạn Philippines">Khách sạn Philippines</a>
+                                </li>
+                                <li>
+                                    <a href="/country/south-korea.html" title="Khách sạn Hàn Quốc">Khách sạn Hàn Quốc</a>
+                                </li>
+                                <li>
+                                    <a href="/country/sri-lanka.html" title="Khách sạn Sri Lanka">Khách sạn Sri Lanka</a>
+                                </li>
+                                <li>
+                                    <a href="/country/taiwan.html" title="Khách sạn Đài Loan">Khách sạn Đài Loan</a>
+                                </li>
+                                <li>
+                                    <a href="/country/thailand.html" title="Khách sạn Thái Lan">Khách sạn Thái Lan</a>
+                                </li>
+                                <li>
+                                    <a href="/country/vietnam.html" title="Khách sạn Việt Nam">Khách sạn Việt Nam</a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td style="width: 14%">
+                            <ul>
+                                <li>
+                                    <span>Châu Âu</span>
+                                </li>
+                                <li>
+                                    <a href="/country/austria.html" title="Khách sạn Áo">Khách sạn Áo</a>
+                                </li>
+                                <li>
+                                    <a href="/country/czech-republic.html" title="Khách sạn Cộng hòa Séc">Khách sạn Cộng hòa Séc</a>
+                                </li>
+                                <li>
+                                    <a href="/country/denmark.html" title="Khách sạn Đan Mạch">Khách sạn Đan Mạch</a>
+                                </li>
+                                <li>
+                                    <a href="/country/finland.html" title="Khách sạn Phần Lan">Khách sạn Phần Lan</a>
+                                </li>
+                                <li>
+                                    <a href="/country/france.html" title="Khách sạn Pháp">Khách sạn Pháp</a>
+                                </li>
+                                <li>
+                                    <a href="/country/germany.html" title="Khách sạn Đức">Khách sạn Đức</a>
+                                </li>
+                                <li>
+                                    <a href="/country/greece.html" title="Khách sạn Hy Lạp">Khách sạn Hy Lạp</a>
+                                </li>
+                                <li>
+                                    <a href="/country/hungary.html" title="Khách sạn Hungary">Khách sạn Hungary</a>
+                                </li>
+                                <li>
+                                    <a href="/country/ireland.html" title="Khách sạn Ireland">Khách sạn Ireland</a>
+                                </li>
+                                <li>
+                                    <a href="/country/italy.html" title="Khách sạn Ý">Khách sạn Ý</a>
+                                </li>
+                                <li>
+                                    <a href="/country/netherlands.html" title="Khách sạn Hà Lan">Khách sạn Hà Lan</a>
+                                </li>
+                                <li>
+                                    <a href="/country/russia.html" title="Khách sạn Nga">Khách sạn Nga</a>
+                                </li>
+                                <li>
+                                    <a href="/country/spain.html" title="Khách sạn Tây Ban Nha">Khách sạn Tây Ban Nha</a>
+                                </li>
+                                <li>
+                                    <a href="/country/sweden.html" title="Khách sạn Thụy Điển">Khách sạn Thụy Điển</a>
+                                </li>
+                                <li>
+                                    <a href="/country/switzerland.html" title="Khách sạn Thụy Sĩ">Khách sạn Thụy Sĩ</a>
+                                </li>
+                                <li>
+                                    <a href="/country/united-kingdom.html" title="Khách sạn Vương quốc Anh">Khách sạn Vương quốc Anh</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Trung Đông</span>
+                                </li>
+                                <li>
+                                    <a href="/country/bahrain.html" title="Khách sạn Bahrain">Khách sạn Bahrain</a>
+                                </li>
+                                <li>
+                                    <a href="/country/egypt.html" title="Khách sạn Ai Cập">Khách sạn Ai Cập</a>
+                                </li>
+                                <li>
+                                    <a href="/country/israel.html" title="Khách sạn Israel">Khách sạn Israel</a>
+                                </li>
+                                <li>
+                                    <a href="/country/united-arab-emirates.html" title=" Khách sạn Các tiểu Vương quốc Ả rập Thống nhất">Khách sạn Các tiểu Vương quốc Ả rập Thống nhất</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Châu Đại Dương</span>
+                                </li>
+                                <li>
+                                    <a href="/country/australia.html" title="Khách sạn Úc">Khách sạn Úc</a>
+                                </li>
+                                <li>
+                                    <a href="/country/new-zealand.html" title="Khách sạn New Zealand">Khách sạn New Zealand</a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td style="width: 14%">
+                            <ul>
+                                <li>
+                                    <span>Cẩm nang Điểm đến</span>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides">Trang chủ Cẩm nang Điểm đến</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Châu Á</span>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/indonesia/bali" title="Cẩm nang Bali">Cẩm nang Bali</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/thailand/bangkok" title="Cẩm nang Bangkok">Cẩm nang Bangkok</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/hong-kong" title="Cẩm nang Hồng Kông">Cẩm nang Hồng Kông</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/indonesia/jakarta" title="Cẩm nang Jakarta">Cẩm nang Jakarta</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/south-korea/jeju-island" title="Cẩm nang Đảo Jeju">Cẩm nang Đảo Jeju</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/malaysia/kuala-lumpur" title="Cẩm nang Kuala Lumpur">Cẩm nang Kuala Lumpur</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/japan/kyoto" title="Cẩm nang Kyoto">Cẩm nang Kyoto</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/japan/kyushu" title="Cẩm nang Kyushu">Cẩm nang Kyushu</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/malaysia/malacca" title="Cẩm nang Malacca">Cẩm nang Malacca</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/philippines/manila" title="Cẩm nang Manila">Cẩm nang Manila</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/japan/nara" title="Cẩm nang Nara">Cẩm nang Nara</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/japan/osaka" title="Cẩm nang Osaka">Cẩm nang Osaka</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/thailand/phuket" title="Cẩm nang Phuket">Cẩm nang Phuket</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/japan/sapporo" title="Cẩm nang Sapporo">Cẩm nang Sapporo</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/south-korea/seoul" title="Cẩm nang Seoul">Cẩm nang Seoul</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/singapore" title="Cẩm nang Singapore">Cẩm nang Singapore</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/taiwan/taichung" title="Cẩm nang Đài Trung">Cẩm nang Đài Trung</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/taiwan/taipei" title="Cẩm nang Đài Bắc">Cẩm nang Đài Bắc</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/japan/tokyo" title="Cẩm nang Tokyo">Cẩm nang Tokyo</a>
+                                </li>
+                                <li>
+                                    <a href="/sponsored-guides/korea-tourism-organization" title="Tổng cục du lịch Hàn Quốc">Tổng cục du lịch Hàn Quốc</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Châu Âu</span>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/france/paris" title="Cẩm nang Paris">Cẩm nang Paris</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Trung Đông</span>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/united-arab-emirates-uae/dubai" title="Cẩm nang Dubai">Cẩm nang Dubai</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/saudi-arabia/jeddah" title="Cẩm nang Jeddah">Cẩm nang Jeddah</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/saudi-arabia" title="Cẩm nang Ả Rập Xê Út">Cẩm nang Ả Rập Xê Út</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Châu Đại Dương</span>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/australia/brisbane" title="Cẩm nang Brisbane">Cẩm nang Brisbane</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/australia/melbourne" title="Cẩm nang Melbourne">Cẩm nang Melbourne</a>
+                                </li>
+                                <li>
+                                    <a href="/travel-guides/australia/sydney" title="Cẩm nang Sydney">Cẩm nang Sydney</a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td style="width: 14%">
+                            <ul>
+                                <li>
+                                    <span>Trang chủ Agoda</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Căn hộ châu Á</span>
+                                </li>
+                                <li>
+                                    <a href="/theme/apartments/city/bangkok-th.html" title="Căn hộ Bangkok">Căn hộ Bangkok</a>
+                                </li>
+                                <li>
+                                    <a href="/theme/apartments/city/kuala-lumpur-my.html" title="Căn hộ Kuala Lumpur">Căn hộ Kuala Lumpur</a>
+                                </li>
+                                <li>
+                                    <a href="/theme/apartments/city/manila-ph.html" title="Căn hộ Manila">Căn hộ Manila</a>
+                                </li>
+                                <li>
+                                    <a href="/theme/apartments/city/osaka-jp.html" title="Căn hộ Osaka">Căn hộ Osaka</a>
+                                </li>
+                                <li>
+                                    <a href="/theme/apartments/city/pattaya-th.html" title="Căn hộ Pattaya">Căn hộ Pattaya</a>
+                                </li>
+                                <li>
+                                    <a href="/theme/apartments/city/tokyo-jp.html" title="Căn hộ Tokyo">Căn hộ Tokyo</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Bungalow châu Á</span>
+                                </li>
+                                <li>
+                                    <a href="/bungalows/city/bali-id.html" title="Bungalow Bali">Bungalow Bali</a>
+                                </li>
+                                <li>
+                                    <a href="/bungalows/city/koh-kood-th.html" title="Bungalow Koh Kood">Bungalow Koh Kood</a>
+                                </li>
+                                <li>
+                                    <a href="/bungalows/city/koh-lanta-th.html" title="Bungalow Koh Lanta">Bungalow Koh Lanta</a>
+                                </li>
+                                <li>
+                                    <a href="/bungalows/city/koh-phangan-th.html" title="Bungalow Koh Phangan">Bungalow Koh Phangan</a>
+                                </li>
+                                <li>
+                                    <a href="/bungalows/city/koh-samet-th.html" title="Bungalow Koh Samet">Bungalow Koh Samet</a>
+                                </li>
+                                <li>
+                                    <a href="/bungalows/city/phu-quoc-island-vn.html" title="Bungalow đảo Phú Quốc">Bungalow đảo Phú Quốc</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Biệt thự châu Á</span>
+                                </li>
+                                <li>
+                                    <a href="/theme/villas/city/bali-id.html" title="Biệt thự Bali">Biệt thự Bali</a>
+                                </li>
+                                <li>
+                                    <a href="/theme/villas/city/phuket-th.html" title="Biệt thự Phuket">Biệt thự Phuket</a>
+                                </li>
+                                <li>
+                                    <a href="/theme/villas/city/pattaya-th.html" title="Biệt thự Pattaya">Biệt thự Pattaya</a>
+                                </li>
+                                <li>
+                                    <a href="/theme/villas/city/hua-hin-cha-am-th.html" title="Biệt thự Hua Hin / Cha-am">Biệt thự Hua Hin / Cha-am</a>
+                                </li>
+                                <li>
+                                    <a href="/theme/villas/city/seoul-kr.html" title="Biệt thự Seoul">Biệt thự Seoul</a>
+                                </li>
+                                <li>
+                                    <a href="/theme/villas/city/port-dickson-my.html" title="Biệt thự Port Dickson">Biệt thự Port Dickson</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Nhà nghỉ dưỡng châu Á</span>
+                                </li>
+                                <li>
+                                    <a href="/vacation-rentals/city/tokyo-jp.html" title="Nhà nghỉ dưỡng Tokyo">Nhà nghỉ dưỡng Tokyo</a>
+                                </li>
+                                <li>
+                                    <a href="/vacation-rentals/city/bangkok-th.html" title="Nhà nghỉ dưỡng Bangkok">Nhà nghỉ dưỡng Bangkok</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <div class="Box-sc-kv6pi1-0 bUPGBM Copyrights-content">
+            <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 hGABti kite-js-Typography ">Mọi nội dung tại đây © 2005 – 2024 Công ty TNHH Tư nhân Agoda. Bảo Lưu Mọi Quyền.</p>
+            <p class="Typographystyled__TypographyStyled-sc-j18mtu-0 hGABti kite-js-Typography ">Agoda.com là thành viên của Tập đoàn Booking Holdings, nhà cung cấp dịch vụ du lịch trực tuyến &amp; các dịch vụ có liên quan hàng đầu thế giới.</p>
+            <div class="Box-sc-kv6pi1-0 hRUYUu BrandsContainer" style="margin: 35px auto 50px;">
+                <div class="Box-sc-kv6pi1-0 fOIEZQ" style="margin: auto;">
+                    <i class="Sprite-sc-1smlr1d-0 ebjHhI" data-mimir-element-data="dictator"></i>
+                    <i class="Sprite-sc-1smlr1d-0 fkjtiw" data-mimir-element-data="dictator"></i>
+                    <i class="Sprite-sc-1smlr1d-0 ggJhqA" data-mimir-element-data="dictator"></i>
+                    <div class="sc-bdfBwQ sc-gsTCUz  eUAySS">
+                        <img srcset="https://cdn6.agoda.net/images/Footer/Booking_Com_Logotype_Aug2020_White.svg?s=16x 16w, https://cdn6.agoda.net/images/Footer/Booking_Com_Logotype_Aug2020_White.svg?s=116x 116w, https://cdn6.agoda.net/images/Footer/Booking_Com_Logotype_Aug2020_White.svg?s=375x 375w, https://cdn6.agoda.net/images/Footer/Booking_Com_Logotype_Aug2020_White.svg?s=600x 600w, https://cdn6.agoda.net/images/Footer/Booking_Com_Logotype_Aug2020_White.svg?s=800x 800w, https://cdn6.agoda.net/images/Footer/Booking_Com_Logotype_Aug2020_White.svg?s=1024x 1024w" src="https://cdn6.agoda.net/images/Footer/Booking_Com_Logotype_Aug2020_White.svg" class="sc-fFubgz sc-bkzZxe  eTXtsC" sizes="111px">
+                    </div>
+                    <i class="Sprite-sc-1smlr1d-0 gGRsJv" data-mimir-element-data="dictator"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
